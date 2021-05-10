@@ -11,14 +11,17 @@ doctype html
 html
   head
     meta(charset='utf-8')
+    meta(name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no")
     meta(http-equiv='X-UA-Compatible' content='IE=edge')
     title=title
+    link(rel='preconnect' href='https://fonts.gstatic.com')
+    link(href='https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,400;0,600;0,700;0,800;0,900;1,400&display=swap' rel='stylesheet')
     link(rel='stylesheet' href=path+'assets/css/style.css')
   body
-    .container
-      include ../_modules/header
-      main.l-main
-        block container
-      include ../_modules/footer
+    include ../_modules/header
+    main.l-main
+      block container
+    include ../_modules/footer
     script(src=path+"assets/js/bootstrap.min.js")
+    script(src=path+"assets/js/common.js")
       

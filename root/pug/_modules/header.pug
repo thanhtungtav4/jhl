@@ -1,16 +1,16 @@
-header.c-header#header
-  .l-container
-    h1.c-header__logo
-      a.logo-image(href=path+"/")
-        img(src=path+"/img/common/logo.png", alt="logo alt")
-    nav.c-header__nav
-      ul.c-header__nav__menu.nav-menu
-        li.nav-menu__item
-          a(href="#") About
-        li.nav-menu__item
-          a(href=path+"/news/") News
-        li.nav-menu__item
-          a(href="#") Info
-        if pageID == 'top'
-          li.nav-menu__item
-            a(href="#") TOP
+nav#navbar_main.mobile-offcanvas.navbar.navbar-expand-lg
+  .container
+    .offcanvas-header
+      button.btn-close.float-end
+    a.navbar-brand(href='#') 
+      img(src=path+'assets/images/jhl_logo.png' alt="JHL logo")
+    ul.navbar-nav.w-100.justify-content-between
+      li.nav-item.active
+        a.nav-link(href='#') Định cư quốc tế 
+      li.nav-item
+        a.nav-link(href='#')  Giới thiệu 
+      li.nav-item
+        a.nav-link(href='#')  Tin tức & sự kiện   
+      li.nav-item
+        a.nav-link(href='#')  Liên hệ
+span.screen-darken

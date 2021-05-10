@@ -25,7 +25,20 @@ body.offcanvas-active {
 	width: 100%;
 	visibility: visible;
 }
-@media all and (max-width: 991px) {
+.nav{
+	&bar{
+		background: #FFFFFF;
+		box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+	}
+	&-link{
+		@include Nunito;
+		font-weight: 700;
+		color: $color_main;
+		font-size: 1.6rem;
+		line-height: 1.35;
+	}
+}
+@include max(768px) {
 	.offcanvas-header {
 		display: block;
 	}
@@ -55,3 +68,4 @@ body.offcanvas-active {
 		transform: translateX(0);
 	}
 }
+

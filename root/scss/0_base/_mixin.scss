@@ -13,12 +13,11 @@
 /*------------------------------------------------------------
 	Font
 ------------------------------------------------------------*/
-@mixin mincyo() {
-	font-family: "游明朝", YuMincho, "ヒラギノ明朝 ProN W3","Hiragino Mincho ProN", "HG明朝E", "ＭＳ Ｐ明朝", "ＭＳ 明朝", serif;
+@mixin Nunito() {
+	font-family: 'Nunito', sans-serif;
+	display: swap;
 }
-@mixin mincho() {
-	font-family: "游明朝", YuMincho, "ヒラギノ明朝 ProN W3","Hiragino Mincho ProN", "HG明朝E", "ＭＳ Ｐ明朝", "ＭＳ 明朝", serif;
-}
+
 
 /*------------------------------------------------------------
 	Media
