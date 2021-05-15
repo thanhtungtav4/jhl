@@ -1,4 +1,4 @@
-nav#navbar_main.mobile-offcanvas.navbar.navbar-expand-lg
+nav#navbar_main.mobile-offcanvas.navbar.navbar-expand-md
   .container
     .offcanvas-header
       button.btn-close.float-end
@@ -14,3 +14,13 @@ nav#navbar_main.mobile-offcanvas.navbar.navbar-expand-lg
       li.nav-item
         a.nav-link(href='#')  Liên hệ
 span.screen-darken
+nav.d-flex.d-md-none.justify-content-between.align-items-center.navbar.navbar__mobile
+  a.navbar-brand(href='#') 
+    img(src=path+'assets/images/jhl_logo.png' alt="JHL logo")
+  a.nav_menu.p-3(data-trigger='navbar_main') 
+    i.gg-menu
+
+
+span.screen-darken
+  button.d-lg-none.btn.btn-warning(data-trigger='navbar_main' type='button')   Show navbar 
+  button.d-lg-none.btn.btn-warning(data-trigger='card_mobile' type='button')   Show card 
