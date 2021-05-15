@@ -45,3 +45,4 @@ document.addEventListener("DOMContentLoaded", function(){
   
   }); 
 // DOMContentLoaded  end
+var swiper = new Swiper('.swiper-container');
