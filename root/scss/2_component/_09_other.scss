@@ -77,3 +77,29 @@
 		line-height: 1.38;
 	}
 }
+.c-trust{
+	&__img{
+		width: 87px;
+		height: 87px;
+		border-radius: 50%;
+		object-fit: cover;
+		margin: 0 auto;
+		text-align: center;
+	}
+	&__name{
+		font-size: 2.4rem;
+		font-weight: 700;
+		line-height: 1.375;
+	}
+	&__tag{
+		z-index: 0;
+		width: 82px;
+		height: 75px;
+		left: 0;
+		top: 10px;
+	}
+	
+	&__content{
+		z-index: 1;
+	}
+}
