@@ -9,24 +9,32 @@ block vars
   -slider       = true
 
 block container
-  .container-fluid
-   .row
-    .col-12
-      // Slider main container
-      .swiper-container
-        // Additional required wrapper
-        .swiper-wrapper
-          // Slides
-          .swiper-slide
-            picture
-             source(srcset=path+'assets/images/dinh-cu-my-en-3.avif')
-             source(srcset=path+'assets/images/dinh-cu-my-en-3.webp')
-             img(src=path+'assets/images/dinh-cu-my-en-3.jpg' alt="ĐỊNH CƯ Canada")
-          .swiper-slide
-            picture
-             source(srcset=path+'assets/images/dinh-cu-canada.avif')
-             source(srcset=path+'assets/images/dinh-cu-canada.webp')
-             img(src=path+'assets/images/dinh-cu-canada.jpg' alt="ĐỊNH CƯ MỸ EB-3")
+  .swiper-container
+    // Additional required wrapper
+    .swiper-wrapper
+      // Slides
+      .swiper-slide.c-slide
+        picture
+          source(srcset=path+'assets/images/dinh-cu-my-en-3.avif')
+          source(srcset=path+'assets/images/dinh-cu-my-en-3.webp')
+          img(src=path+'assets/images/dinh-cu-my-en-3.jpg' alt="ĐỊNH CƯ Canada")
+        .row.position-absolute.c-slide__box
+          .c-slide__inner
+            .col-12 
+              h3.c-slide__ttl ĐỊNH CƯ MỸ EB-3
+              p.c-slide__txt Trở thành công dân cường quốc Mỹ theo hình thức chuyên gia hoặc lao động với công việc dài hạn, chương trình an cư "hậu di trú" uy tín, đảm bảo cho thường trú nhân gia đình những quyền lợi tốt nhất 
+              a.c-slide__btn.btn(href="#" ) Xem thêm
+      .swiper-slide
+        picture
+          source(srcset=path+'assets/images/dinh-cu-canada.avif')
+          source(srcset=path+'assets/images/dinh-cu-canada.webp')
+          img(src=path+'assets/images/dinh-cu-canada.jpg' alt="ĐỊNH CƯ MỸ EB-3")
+        .row.position-absolute.c-slide__box
+          .c-slide__inner
+            .col-12 
+              h3.c-slide__ttl ĐỊNH CƯ MỸ EB-3
+              p.c-slide__txt Trở thành công dân cường quốc Mỹ theo hình thức chuyên gia hoặc lao động với công việc dài hạn, chương trình an cư "hậu di trú" uy tín, đảm bảo cho thường trú nhân gia đình những quyền lợi tốt nhất 
+              a.c-slide__btn.btn(href="#" ) Xem thêm
   .container
     section.c-intro.row.mt-5
       .col-md-6
@@ -83,6 +91,9 @@ block container
           .col-12
             h2.c-why__ttl VÌ SAO JHL ĐƯỢC KHÁCH HÀNG
             | TIN TƯỞNG LỰA CHỌN
+          .col-md-4.col-6
+            p.c-why__num 2000+
+            img.c-why__icon(src="", alt="")  
 block script
 
    
