@@ -14,6 +14,66 @@
 		line-height: 1.37;
 		color: $color2;
 		bottom: 24px;
-		left: 0;
+		left: 35px;
+		font-weight: 800;
+		@include sp{
+			font-size: 1.4rem;
+			font-weight: bold;
+			left: 15px;
+		}
+	}
+}
+.c-why{
+	margin-top: 80px;
+	background-color: rgba(120, 10, 10, 0.8);
+	background-image: url(../../assets/images/why_01.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	padding: 44px 0 73px;
+	&__ttl{
+		color: $color_main02;
+		@include sp{
+			text-align: center;
+		}
+	}
+	&__num{
+		color: $color2;
+		font-weight: bold;
+		font-size: 3.6rem;
+		line-height: 1.7;
+		@include sp{
+			text-align: center;
+		}
+	}
+	picture{
+		@include sp{
+			display: flex;
+			justify-content: center;
+		}
+	}
+	&__txt{
+		font-weight: 600;
+		font-size: 1.8rem;
+		line-height: 1.38;
+		color: $color2;
+		margin-top: 24px;
+		max-width: 166px;
+		@include sp{
+			text-align: center;
+			margin: 24px auto ;
+		}
+	}
+}
+.c-waffter{
+	background: rgba(255, 250, 45, 0.8);
+	background-image: url(../../assets/images/why_02.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	padding: 24px 0 34px;
+	&__txt{
+		color: $color_main;
+		font-weight: bold;
+		font-size: 1.8rem;
+		line-height: 1.38;
 	}
 }
