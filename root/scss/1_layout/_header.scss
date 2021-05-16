@@ -29,7 +29,7 @@ body.offcanvas-active {
 	&bar{
 		background: #FFFFFF;
 		box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-		z-index: 10;
+		z-index: 8;
 	}
 	&-link{
 		@include Nunito;

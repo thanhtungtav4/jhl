@@ -2,15 +2,18 @@
 	Other
 ------------------------------------------------------------*/
 .c-intro{
-	&__ttl{
-	  font-size: 3.6rem;
-	  line-height: 1.4;
-	  color: $color_main;
-	  font-weight: bold;
-	}
 	&__txt{
 		font-size: 1.4rem;
 		font-weight: 300;
 		line-height: 1.357;
+	}
+}
+.c-customer{
+	&__ttl{
+		font-size: 1.8rem;
+		line-height: 1.37;
+		color: $color2;
+		bottom: 24px;
+		left: 0;
 	}
 }
