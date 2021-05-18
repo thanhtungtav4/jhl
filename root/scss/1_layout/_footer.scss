@@ -1,4 +1,6 @@
 footer{
+    box-shadow: 0px -4px 4px rgba(0, 0, 0, 0.25);
+    padding: 5.2rem 0 9.7rem;
     .list-unstyled{
         ul{
             li{
@@ -11,6 +13,7 @@ footer{
             font-size: 1.4rem;
             font-weight: 300;
             line-height: 1.5;
+            margin-top: 18px;
         }
         &_list{
             
