@@ -117,6 +117,8 @@
 	&__content{
 		z-index: 1;
 		padding-bottom: 3.8rem;
+		max-width: 277px;
+		margin: 0 auto;
 	}
 	&__txt{
 		margin-top: 12px;
@@ -125,5 +127,24 @@
 		font-weight: 300;
 		font-style: italic;
 		text-align: left;
+	}
+}
+.c-story{
+	background: url(../../assets/images/c-story__img.jpg);
+	background-position: top center;
+	background-size: cover;
+	min-height: 485px;
+}
+.c-news{
+	&__time{
+		position: relative;
+		&::before{
+			content: '';
+			background: url(../../assets/images/calendar_today.jpg) ;
+			width: 17px;
+			height: 19px;
+			position: absolute;
+			margin-right: 6px;
+		}
 	}
 }

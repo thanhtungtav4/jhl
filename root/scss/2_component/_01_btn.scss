@@ -10,3 +10,10 @@
 	padding: 8px 16.37px;
 	border-radius: 50px;
 }
+.swiper-pagination-bullet{
+	background: $color_main02;
+	opacity: 0.8;
+	&-active{
+		background: $color_main;
+	}
+}
