@@ -13,6 +13,13 @@
 			width: 100%;
 			display: flex;
 			justify-content: flex-end;
+			@include max(768px){
+				top: 7%;
+				bottom: 7%;
+			}
+			@include max(600px){
+				visibility: hidden;
+			}
 		}
 		&__inner{
 			max-width: 375px;
