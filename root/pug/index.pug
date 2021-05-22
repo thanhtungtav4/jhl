@@ -44,7 +44,7 @@ block container
          | xúc tiến hồ sơ chuyên nghiệp, JHL tự hào là công ty đi đầu trong lĩnh vực 
          | Du học - Du lịch & Định cư Mỹ và Canada cam kết chất lượng dịch vụ, đảm bảo 
          |uy tín hàng đầu.
-        a.c-intro__btn.btn(href="#" ) Xem thêm
+        a.c-intro__btn.btn.mt-3(href="#" ) Xem thêm
       .col-md-6
         picture
           source(srcset=path+'assets/images/diverse-workers.avif' type="image/avif")
@@ -54,9 +54,9 @@ block container
       .col-10.mx-auto.text-center
         h2.c-customer__ttl.ttl QUYỀN LỢI KHÁCH HÀNG LÀ ƯU TIÊN <br> HÀNG ĐẦU TẠI JHL 
         p.c-customer__txt Với tiêu chuẩn không thỏa hiệp, JHL là người bạn đồng 
-        | hành đáng tin cậy trong quá trình hội nhập và an cư tại nước ngoài, cam
-        | kết đem lại cho thường trú nhân và gia đình công việc ổn định, hưởng toàn
-        | bộ phúc lợi xã hội và nền y tế, giáo dục hàng đầu tại Mỹ & Canada.
+          | hành đáng tin cậy trong quá trình hội nhập và an cư tại nước ngoài, cam
+          | kết đem lại cho thường trú nhân và gia đình công việc ổn định, hưởng toàn
+          | bộ phúc lợi xã hội và nền y tế, giáo dục hàng đầu tại Mỹ & Canada.
       .row
        .col-md-6.position-relative.p-md-3.p-2.mx-auto
         picture
@@ -158,42 +158,42 @@ block container
           // Add Pagination
           .swiper-pagination    
   section.c-story
-    .container
+    .container.container__inner
       .row
-        .col-md-6.col-10
-          h3.c-story__ttl CÂU CHUYỆN THÀNH CÔNG TỪ KHÁCH HÀNG JHL
-          p.c-story__sub Được sống ở Canada đã là ước mơ từ bé của tôi.
+        .col-md-6.col-12.c-story__inner
+          h3.c-story__ttl.ttl CÂU CHUYỆN THÀNH CÔNG TỪ KHÁCH HÀNG JHL
+          p.c-story__sub Được sống ở Canada đã là ước <br> mơ từ bé của tôi.
           p.c-story__text Khi quyết tâm thực hiện ước mơ này tôi cũng gặp kha khá nhiều trở ngại, mà trước nhất là đắn đo lớn nhất trong lòng. Bởi vì trước đây tôi chưa từng đi du lịch Canada hay châu Mỹ, hơn thế nữa tôi lại...
           a.c-story__btn.btn(href="#" ) Xem thêm
-  section.c-news.py-5
+  section.c-news.py-5.p-sm-3
     .container
       .row
         .col-12
           h2.ttl.c-news__ttl.text-center.mb-5 TIN TỨC & SỰ KIỆN
-        .col-md-4.col-6
-          .card.shadow-sm
+        .col-md-4.col-6.mt-3
+          .card.shadow-sm.m-lg-5.m-md-2
             img(src=path+'assets/images/news__img.jpg' type="image/jpg" alt="news")
-            .card-body.p-4
+            .card-body.p-md-4.p-2
               h4.c-news__name.mb-3 Lorem ipsum dolor sit amet consectetur adipiscing
               p.card-text.c-news__txt
                 | Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis vitae ultricies turpis. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
               .d-flex.justify-content-between.align-items-center.mt-4
                 p.c-news__time 23, April 2021
                 a.c-news__btn.btn(href="#" ) Xem thêm
-        .col-md-4.col-6
-          .card.shadow-sm
+        .col-md-4.col-6.mt-3
+          .card.shadow-sm.m-lg-5.m-md-2
             img(src=path+'assets/images/news__img.jpg' type="image/jpg" alt="news")
-            .card-body.p-4
+            .card-body.p-md-4.p-2
               h4.c-news__name.mb-3 Lorem ipsum dolor sit amet consectetur adipiscing
               p.card-text.c-news__txt
                 | Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis vitae ultricies turpis. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
               .d-flex.justify-content-between.align-items-center.mt-4
                 p.c-news__time 23, April 2021
                 a.c-news__btn.btn(href="#" ) Xem thêm
-        .col-md-4.col-6
-          .card.shadow-sm
+        .col-md-4.col-6.mt-3.mx-auto
+          .card.shadow-sm.m-lg-5.m-md-2
             img(src=path+'assets/images/news__img.jpg' type="image/jpg" alt="news")
-            .card-body.p-4
+            .card-body.p-md-4.p-2
               h4.c-news__name.mb-3 Lorem ipsum dolor sit amet consectetur adipiscing
               p.card-text.c-news__txt
                 | Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis vitae ultricies turpis. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
@@ -202,20 +202,20 @@ block container
                 a.c-news__btn.btn(href="#" ) Xem thêm
   section.c-submit.py-5
     .container
-      .row
-        .col-md-7
+      .row.c-submit__shadow
+        .col-md-7.p-0
           img(src=path+'assets/images/img-submit.jpg' type="image/jpg" alt="ĐĂNG KÝ NHẬN TƯ VẤN")
         .col-md-5.py-4.align-self-center
            .c-submit__inner
             p.c-submit__ttl.ttl ĐĂNG KÝ NHẬN TƯ VẤN
-            form
+            form.mt-3.mb-3
               .form-group
                 input.form-control(type='text' placeholder='Tên')
               .form-group
                 input.form-control(type='text' placeholder='Email')
               .form-group
                 input.form-control(type='text' placeholder='Số điện thoại')
-            button.btn.btn-primary.mt-4.d-block.mx-auto(type='submit') Sign in                
+            button.btn.mt-4.d-block.mx-auto(type='submit') Đăng ký                
 block script
 
    

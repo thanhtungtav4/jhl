@@ -9,17 +9,29 @@
 	}
 }
 .c-customer{
+	img{
+		width: 100%;
+	}
 	&__txt{
-		font-size: 1.8rem;
+		font-size: 1.4rem;
 		line-height: 1.37;
-		color: $color2;
 		bottom: 24px;
 		left: 35px;
-		font-weight: 800;
+		font-weight: 300;
+		max-width: 573px;
+		text-align: center;
+		margin: 2rem auto;
 		@include sp{
 			font-size: 1.4rem;
 			font-weight: bold;
 			left: 15px;
+		}
+	}
+	&__ttl{
+		@include sp{
+			br{
+				display: none;
+			}
 		}
 	}
 }
@@ -133,7 +145,34 @@
 	background: url(../../assets/images/c-story__img.jpg);
 	background-position: top center;
 	background-size: cover;
-	min-height: 485px;
+	&__ttl{
+		color: $color_main02;
+	}
+	&__inner{
+		padding: 5rem 0 7rem;
+		@include max(992px){
+			padding: 3rem 0 6rem;
+			padding-left: 2rem;
+		}
+	}
+	&__sub{
+		color: $color_main;
+		font-style: 2.4rem;
+		font-weight: bold;
+		line-height: 1.375;
+		font-style: normal;
+		margin-bottom: 1rem;
+		font-size: 2.4rem;
+	}
+	&__text{
+		color: black;
+		font-size: 1.4rem;
+		line-height: 1.375;
+		font-style: normal;
+		font-weight: 300;
+		margin-bottom: 2rem;
+		max-width: 378px;
+	}
 }
 .c-news{
 	&__time{
@@ -147,10 +186,26 @@
 			margin-right: 6px;
 		}
 	}
+	&__btn{
+		font-size: 1.2rem;
+		padding: 8px 4px;
+	}
+	&__txt{
+		overflow: hidden;
+		text-overflow: ellipsis;
+		line-height: 25px;
+		-webkit-line-clamp: 4;
+		height: 69px;
+		display: -webkit-box;
+		-webkit-box-orient: vertical;
+	}
 }
 .c-submit{
 	&__inner{
 		padding: 0 4rem;
+	}
+	&__shadow{
+		box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
 	}
 	&__ttl{
 		font-weight: 700;
