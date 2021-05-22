@@ -78,9 +78,14 @@
 }
 .c-ceo{
 	color: #ffff;
+	background-color: #780A0A;
 	&__bg{
-		background-color: #780A0A;
-		padding: 5%;
+		align-items: center;
+		padding: 5%;	
+	}
+	img{
+		width: 100%;
+		height: 100%;
 	}
 	&__ttl{
 		font-weight: bold;
