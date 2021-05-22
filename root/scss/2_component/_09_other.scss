@@ -27,6 +27,18 @@
 			left: 15px;
 		}
 	}
+	&__ttl02{
+		color: #ffff;
+		font-size: 1.8rem;
+		line-height: 1.38;
+		font-weight: 800;
+		bottom: 2.4rem;
+		left: 10%;
+		@include sp{
+			font-size: 1.6rem;
+			font-weight: bold;
+		}
+	}
 	&__ttl{
 		@include sp{
 			br{
@@ -201,6 +213,7 @@
 	}
 }
 .c-submit{
+	margin-bottom: 4.6rem;
 	&__inner{
 		padding: 0 4rem;
 	}
