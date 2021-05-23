@@ -170,6 +170,9 @@
 		font-size: 1.8rem;
 		line-height: 1.38;
 		font-weight: 600;
+		 &:nth-child(2){
+			 font-weight: 800;
+		 }
 	}
 	li{
 		padding:9px 18px 9px 24px;
