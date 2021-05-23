@@ -104,3 +104,28 @@
 		line-height: 1.38;
 	}
 }
+.c-block{
+	&__inner{
+		width: 276px;
+		height: 257px;
+		background-color: $color_main02;
+		margin: 0 auto;
+		text-align: left;
+		padding: 30px 32px;
+	}
+	&__ttl{
+		&--sub{
+			margin-top: 13px;
+			font-weight: bold;
+			font-size: 2.4rem;
+			line-height: 1.375;
+			color: $color_main;
+		}
+	}
+	&__txt{
+		font-weight: 600;
+		font-size: 1.8rem;
+		line-height: 1.38;
+		margin-top: 5px;
+	}
+}
