@@ -108,7 +108,7 @@
 	&02{
 		padding: 13rem 0 6rem;
 		&__inner{
-			width: 226px;
+			max-width: 226px;
 			height: 211px;
 			background-color: $color_main02;
 			margin: 0 auto;
@@ -135,7 +135,7 @@
 		}
 	}
 	&__inner{
-		width: 276px;
+		max-width: 276px;
 		height: 257px;
 		background-color: $color_main02;
 		margin: 0 auto;
@@ -149,6 +149,9 @@
 			font-size: 2.4rem;
 			line-height: 1.375;
 			color: $color_main;
+			@include sp{
+				font-size: 2rem;
+			}
 		}
 	}
 	&__txt{
@@ -156,6 +159,9 @@
 		font-size: 1.8rem;
 		line-height: 1.38;
 		margin-top: 5px;
+		@include sp{
+			font-size: 1.4rem;
+		}
 	}
 }
 .c-find{

@@ -20,3 +20,9 @@
         color: #09A9DB;
 	}
 }
+.offcanvas-header{
+	@include max(767px){
+		display: flex;
+		justify-content: flex-end;
+	}
+}
