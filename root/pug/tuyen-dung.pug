@@ -210,26 +210,18 @@ block container
             | này để chờ công việc yêu thích mở đơn.
             | Hãy đăng ký tại đây để JHL thông báo cho bạn về các cơ hội nghề 
             | nghiệp bạn thích!
-          form
+          form.mt-4.d-flex
             .form-row
+              .form-group.col-md-3
+                input.form-control(type='text' placeholder="*Họ và tên:")
+              .form-group.col-md-3
+                input.form-control(type='email' placeholder="*Email:")
               .form-group.col-md-6
-                label(for='inputCity') City
-                input#inputCity.form-control(type='text')
-              .form-group.col-md-4
-                label(for='inputState') State
-                select#inputState.form-control
-                  option(selected='') Choose...
-                  option ...
-              .form-group.col-md-2
-                label(for='inputZip') Zip
-                input#inputZip.form-control(type='text')
-            .form-group
-              .form-check
-                input#gridCheck.form-check-input(type='checkbox')
-                label.form-check-label(for='gridCheck')
-                  | Check me out
-            button.btn.btn-primary(type='submit') Sign in  
-
+                input.form-control(type='text' placeholder="*Vị trí ứng tuyển:")
+            button.btn.c-send__btn(type='submit') Submit
+  section.c-value
+    p.c-value__ttl Cùng nhau tạo nên những giá trị tuyệt vời 
+     | <br>tại JHL Tư vấn Du lịch, Du học & Định cư
 block script
 
    
