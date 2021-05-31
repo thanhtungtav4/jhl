@@ -140,3 +140,20 @@
 				}
 			}
 		}
+		.c-pagination{
+			padding: 8rem 0;
+			.page-item{
+				.page-link{
+					border: 0;
+					color: black;
+					font-weight: 600;
+					font-size: 1.8rem;
+					line-height: 1.38;
+				}
+				&:nth-child(1){
+					.page-link{
+						color: #E0E0E0;
+					}
+				}
+			}
+		}
