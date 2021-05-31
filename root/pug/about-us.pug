@@ -1,0 +1,220 @@
+extends _layout/default
+
+block vars
+  -title        = 'JHL Home'
+  -description  = ''
+  -keywords     = ''
+  -pageID       = 'top'
+  -path         = ''
+  -slider       = true
+
+block container
+  .swiper-container.swiper-banner
+    // Additional required wrapper
+    .swiper-wrapper
+      // Slides
+      .swiper-slide.c-slide
+        picture
+          source(srcset=path+'assets/images/about_slider.avif' type="image/avif")
+          source(srcset=path+'assets/images/about_slider.webp' type="image/webp")
+          img(src=path+'assets/images/about_slider.jpg' type="image/jpg" alt="ĐỊNH CƯ Canada")
+        .row.position-absolute.c-slide__box
+          .c-slide__inner
+            .col-12 
+              h3.c-slide__ttl GIỚI THIỆU VỀ JHL
+              p.c-slide__txt Dựa trên nền tảng phát triển được xây dựng bởi mối quan hệ hợp tác nhiều năm với các hãng luật uy tín, kết hợp cùng quy trình tư vấn, xúc tiến hồ sơ chuyên nghiệp, JHL tự hào là công ty đi đầu trong lĩnh vực Du học - Du lịch & Định cư Mỹ và Canada cam kết chất lượng dịch vụ, đảm bảo uy tín hàng đầu.
+              a.c-slide__btn.btn(href="#" ) Xem thêm
+      .swiper-slide.c-slide
+        picture
+          source(srcset=path+'assets/images/about_slider.avif' type="image/avif")
+          source(srcset=path+'assets/images/about_slider.webp' type="image/webp")
+          img(src=path+'assets/images/about_slider.jpg' type="image/jpg" alt="ĐỊNH CƯ Canada")
+        .row.position-absolute.c-slide__box
+          .c-slide__inner
+            .col-12 
+              h3.c-slide__ttl GIỚI THIỆU VỀ JHL
+              p.c-slide__txt Dựa trên nền tảng phát triển được xây dựng bởi mối quan hệ hợp tác nhiều năm với các hãng luật uy tín, kết hợp cùng quy trình tư vấn, xúc tiến hồ sơ chuyên nghiệp, JHL tự hào là công ty đi đầu trong lĩnh vực Du học - Du lịch & Định cư Mỹ và Canada cam kết chất lượng dịch vụ, đảm bảo uy tín hàng đầu.
+              a.c-slide__btn.btn(href="#" ) Xem thêm
+  .container.container__inner
+    section.c-intro.row.mt-5.align-items-center
+      .col-12.mt-4.mb-5
+        p.c-intro__txt.mb-3 Không phải mọi giấc mơ đều trở thành sự thật, vì có những giấc mơ chỉ trở thành sự thật trong điều kiện lý tưởng. Với nền giáo dục và môi trường sống tiên tiến tại những quốc gia phát triển hàng đầu thế giới của Mỹ & Canada, JHL tin rằng sự nghiệp thành công và cuộc sống phồn thịnh không là mục tiêu nằm ngoài tầm với.
+        p.c-intro__txt Thành lập từ năm 1998, JHL tự hào được hợp tác với nhiều đơn vị đối tác uy tín quốc tế để trở thành cầu nối vững chắc giúp khách hàng hoàn thành kế hoạch an cư lập nghiệp, tận hưởng cuộc sống tuyệt vời với những quyền lợi được đảm bảo tối đa.
+      .col-md-6
+        h2.c-intro__ttl.ttl TẦM NHÌN & SỨ MỆNH JHL
+        p.c-intro__txt JHL là công ty đi đầu về các dịch vụ tư vấn du học, du lịch & Định cư Mỹ, Canada tại Việt Nam. Với hơn 3+ năm phát triển cùng đội ngũ nhân viên giàu kinh nghiệm, JHL đã triển khai nhiều dự án định cư Mỹ EB-3, Định cư Canada diện lao động, tư vấn du lịch, du học uy tín và hiện thực hóa ước mơ cho nhiều khách hàng. Cũng chính vì vậy, JHL đã dần trở thành thương hiệu uy tín hàng đầu với tỷ lệ thành công xin visa Mỹ & Canada cao và nhanh chóng. 
+        a.c-intro__btn.btn.mt-3(href="#" ) Xem thêm
+      .col-md-6
+        picture
+          source(srcset=path+'assets/images/about01.avif' type="image/avif")
+          source(srcset=path+'assets/images/about01.webp' type="image/webp") 
+          img(src=path+'assets/images/about01.jpg' type="image/jpg" alt="TẦM NHÌN & SỨ MỆNH JHL")
+    section.c-customer.row.pt-5.mx-auto
+      .col-10.mx-auto.text-center
+        h2.c-customer__ttl.ttl QUYỀN LỢI KHÁCH HÀNG LÀ ƯU TIÊN <br> HÀNG ĐẦU TẠI JHL 
+        p.c-customer__ttl02--sub Với tiêu chuẩn không thỏa hiệp, JHL là người bạn đồng 
+          | hành đáng tin cậy trong quá trình hội nhập và an cư tại nước ngoài, cam
+          | kết đem lại cho thường trú nhân và gia đình công việc ổn định, hưởng toàn
+          | bộ phúc lợi xã hội và nền y tế, giáo dục hàng đầu tại Mỹ & Canada.
+      .row
+       .col-md-6.position-relative.p-md-3.p-2.mx-auto
+        picture
+          source(srcset=path+'assets/images/customer_01.avif' type="image/avif" )
+          source(srcset=path+'assets/images/customer_01.webp' type="image/webp")
+          img(src=path+'assets/images/customer_01.jpg'  type="image/jpg" alt="QUY TRÌNH XÚC TIẾN HỒ SƠ NHANH CHÓNG") 
+          p.c-customer__ttl02.position-absolute QUY TRÌNH XÚC TIẾN <br> HỒ SƠ NHANH CHÓNG
+       .col-md-6.position-relative.p-md-3.p-2.mx-auto
+        picture
+          source(srcset=path+'assets/images/customer_02.avif' type="image/avif")
+          source(srcset=path+'assets/images/customer_02.webp' type="image/webp")
+          img(src=path+'assets/images/customer_02.jpg' type="image/jpg" alt="TƯ VẤN ĐỊNH CƯ THẲNG THẮN VÀ MINH BẠCH")
+          p.c-customer__ttl02.position-absolute TƯ VẤN ĐỊNH CƯ <br> THẲNG THẮN VÀ MINH BẠCH
+      .row
+        .col-md-4.col-6.position-relative.p-md-3.p-2.mx-auto
+          picture
+            source(srcset=path+'assets/images/customer_03.avif'  type="image/avif" )
+            source(srcset=path+'assets/images/customer_03.webp'  type="image/webp" )
+            img(src=path+'assets/images/customer_03.jpg'  type="image/jpg"  alt="DỊCH VỤ AN CƯ TẬN TÂM TRỌN GÓI")
+            p.c-customer__ttl02.position-absolute DỊCH VỤ AN CƯ <br> TẬN TÂM TRỌN GÓI
+        .col-md-4.col-6.position-relative.p-md-3.p-2.mx-auto
+          picture
+            source(srcset=path+'assets/images/customer_04.avif' type="image/avif")
+            source(srcset=path+'assets/images/customer_04.webp' type="image/webp")
+            img(src=path+'assets/images/customer_04.jpg' type="image/jpg" alt="ĐẢM BẢO QUYỀN LỢI BỞI LUẬT LAO ĐỘNG QUỐC GIA")
+            p.c-customer__ttl02.position-absolute ĐẢM BẢO QUYỀN LỢI <br> BỞI LUẬT LAO ĐỘNG <br>QUỐC GIA
+        .col-md-4.col-6.position-relative.p-md-3.p-2.mx-auto
+          picture
+            source(srcset=path+'assets/images/customer_05.avif' type="image/avif" )
+            source(srcset=path+'assets/images/customer_05.webp' type="image/webp" )
+            img(src=path+'assets/images/customer_05.jpg' type="image/jpg"  alt="CHÍNH SÁCH HOÀN TIỀN HẠN CHẾ RỦI RO")
+            p.c-customer__ttl02.position-absolute CHÍNH SÁCH <br>HOÀN TIỀN HẠN CHẾ <br>RỦI RO      
+  section.c-why
+    .container.container__why
+      .row
+        .col-12
+          h2.c-why__ttl.ttl.text-center VÌ SAO JHL ĐƯỢC KHÁCH HÀNG
+            | <br>TIN TƯỞNG LỰA CHỌN
+        .col-md-3.col-6
+          p.c-why__num 2000+
+          picture
+            source(srcset=path+'assets/images/icon_note.webp' type="image/webp")
+            img(src=path+'assets/images/icon_note.png' type="image/png" alt="Visa Đầu Tư Định Cư EB3 đã và đang được thụ lý")
+          p.c-why__txt Visa Đầu Tư Định Cư EB3 đã và đang được thụ lý
+        .col-md-3.col-6  
+          p.c-why__num 600+
+          picture
+            source(srcset=path+'assets/images/icon_note.webp'  type="image/webp")
+            img(src=path+'assets/images/icon__book.png' type="image/png" alt="Hồ sơ di trú thành công nộp vào Sở di trú Mỹ")
+          p.c-why__txt Hồ sơ di trú thành công nộp vào Sở di trú Mỹ
+        .col-md-3.col-6  
+          p.c-why__num 1000+
+          picture
+            source(srcset=path+'assets/images/icon__partner.webp' type="image/webp")
+            img(src=path+'assets/images/icon__partner.png' type="image/png" alt="Thường trú nhân và gia đình hiện thực hóa ước mơ định cư cùng JHL")
+          p.c-why__txt Thường trú nhân và gia đình hiện thực hóa ước mơ định cư cùng JHL
+        .col-md-3.col-6  
+          p.c-why__num 6 tháng
+          picture
+            source(srcset=path+'assets/images/icon__time.webp' type="image/webp")
+            img(src=path+'assets/images/icon__time.png' type="image/png" alt="Thời gian chấp nhận hồ sơ EB-3 kỷ lục") 
+          p.c-why__txt  Thời gian chấp nhận hồ sơ EB-3 kỷ lục     
+  section.c-waffter
+    .container
+      .row
+        .col-md-7.mx-auto
+          p.c-waffter__txt.text-center Những con số ấn tượng này không chỉ được tạo nên nhờ năng 
+            |lực tư vấn hội nhập và an cư của JHL mà còn vì cái tâm và cái tầm đội ngũ
+            | trợ lý pháp lý tại JHL, mạng lưới đối tác rộng lớn cùng bề dày kinh nghiệm,
+            | đem đến dịch vụ định cư chất lượng tương xứng tầm giá.
+  section.c-trust
+    .container
+      .row
+        .col-10.mx-auto.text-center.mb-5
+          h2.ttl.c-trust__ttl QUYỀN LỢI CỦA KHÁCH HÀNG LÀ ƯU TIÊN HÀNG ĐẦU CỦA JHL     
+        .swiper-container.customer-swiper.mt-4
+          .swiper-wrapper
+            .swiper-slide.text-center
+              img.c-trust__img(src=path+'assets/images/customer_03.jpg' type="image/jpg")
+              .c-trust__content.position-relative
+                img.c-trust__tag.position-absolute(src=path+'assets/images/tag.png'  type="image/png")
+                p.c-trust__name Nguyễn Thanh Toàn 
+                p.c-trust__local Định cư EB-3
+                p.c-trust__txt Cả gia đình tôi đã đến Mỹ được hơn 1 tháng mà tôi vẫn thấy lâng lâng vì vui sướng. Tôi có việc làm ngay khi đến đây và con tôi được đi học miễn phí. Các thủ tục mướn nhà, đăng ký việc làm, hòa nhập cộng đồng... đều được JHL quan tâm nhiệt tình. Thật sự cảm ơn JHL rất nhiều vì đã hỗ trợ gia đình tôi chu đáo.
+            .swiper-slide.text-center
+              img.c-trust__img(src=path+'assets/images/customer_03.jpg' type="image/jpg")
+              .c-trust__content.position-relative
+                img.c-trust__tag.position-absolute(src=path+'assets/images/tag.png'  type="image/png")
+                p.c-trust__name Nguyễn Thanh Toàn 
+                p.c-trust__local Định cư EB-3
+                p.c-trust__txt Cả gia đình tôi đã đến Mỹ được hơn 1 tháng mà tôi vẫn thấy lâng lâng vì vui sướng. Tôi có việc làm ngay khi đến đây và con tôi được đi học miễn phí. Các thủ tục mướn nhà, đăng ký việc làm, hòa nhập cộng đồng... đều được JHL quan tâm nhiệt tình. Thật sự cảm ơn JHL rất nhiều vì đã hỗ trợ gia đình tôi chu đáo.
+            .swiper-slide.text-center
+              img.c-trust__img(src=path+'assets/images/customer_03.jpg' type="image/jpg")
+              .c-trust__content.position-relative
+                img.c-trust__tag.position-absolute(src=path+'assets/images/tag.png'  type="image/png")
+                p.c-trust__name Nguyễn Thanh Toàn 
+                p.c-trust__local Định cư EB-3
+                p.c-trust__txt Cả gia đình tôi đã đến Mỹ được hơn 1 tháng mà tôi vẫn thấy lâng lâng vì vui sướng. Tôi có việc làm ngay khi đến đây và con tôi được đi học miễn phí. Các thủ tục mướn nhà, đăng ký việc làm, hòa nhập cộng đồng... đều được JHL quan tâm nhiệt tình. Thật sự cảm ơn JHL rất nhiều vì đã hỗ trợ gia đình tôi chu đáo.
+          // Add Pagination
+          .swiper-pagination    
+  section.c-story
+    .container.container__inner
+      .row
+        .col-md-6.col-12.c-story__inner
+          h3.c-story__ttl.ttl CÂU CHUYỆN THÀNH CÔNG TỪ KHÁCH HÀNG JHL
+          p.c-story__sub Được sống ở Canada đã là ước <br> mơ từ bé của tôi.
+          p.c-story__text Khi quyết tâm thực hiện ước mơ này tôi cũng gặp kha khá nhiều trở ngại, mà trước nhất là đắn đo lớn nhất trong lòng. Bởi vì trước đây tôi chưa từng đi du lịch Canada hay châu Mỹ, hơn thế nữa tôi lại...
+          a.c-story__btn.btn(href="#" ) Xem thêm
+  section.c-news.py-5.p-sm-3
+    .container
+      .row
+        .col-12
+          h2.ttl.c-news__ttl.text-center.mb-5 TIN TỨC & SỰ KIỆN
+        .col-md-4.col-6.mt-3
+          .card.shadow-sm.m-lg-3.m-md-2
+            img(src=path+'assets/images/news__img.jpg' type="image/jpg" alt="news")
+            .card-body.p-md-4.p-2
+              h4.c-news__name.mb-3 Lorem ipsum dolor sit amet consectetur adipiscing
+              p.card-text.c-news__txt
+                | Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis vitae ultricies turpis. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+              .d-flex.justify-content-between.align-items-center.mt-4
+                p.c-news__time 23, April 2021
+                a.c-news__btn.btn(href="#" ) Xem thêm
+        .col-md-4.col-6.mt-3
+          .card.shadow-sm.m-lg-3.m-md-2
+            img(src=path+'assets/images/news__img.jpg' type="image/jpg" alt="news")
+            .card-body.p-md-4.p-2
+              h4.c-news__name.mb-3 Lorem ipsum dolor sit amet consectetur adipiscing
+              p.card-text.c-news__txt
+                | Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis vitae ultricies turpis. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+              .d-flex.justify-content-between.align-items-center.mt-4
+                p.c-news__time 23, April 2021
+                a.c-news__btn.btn(href="#" ) Xem thêm
+        .col-md-4.col-6.mt-3.mx-auto
+          .card.shadow-sm.m-lg-3.m-md-2
+            img(src=path+'assets/images/news__img.jpg' type="image/jpg" alt="news")
+            .card-body.p-md-4.p-2
+              h4.c-news__name.mb-3 Lorem ipsum dolor sit amet consectetur adipiscing
+              p.card-text.c-news__txt
+                | Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis vitae ultricies turpis. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+              .d-flex.justify-content-between.align-items-center.mt-4
+                p.c-news__time 23, April 2021
+                a.c-news__btn.btn(href="#" ) Xem thêm
+  section.c-submit.py-5
+    .container
+      .row.c-submit__shadow
+        .col-md-7.p-0
+          img(src=path+'assets/images/img-submit.jpg' type="image/jpg" alt="ĐĂNG KÝ NHẬN TƯ VẤN")
+        .col-md-5.py-4.align-self-center
+           .c-submit__inner
+            p.c-submit__ttl.ttl ĐĂNG KÝ NHẬN TƯ VẤN
+            form.mt-3.mb-3
+              .form-group
+                input.form-control(type='text' placeholder='Tên')
+              .form-group
+                input.form-control(type='text' placeholder='Email')
+              .form-group
+                input.form-control(type='text' placeholder='Số điện thoại')
+            button.btn.mt-4.d-block.mx-auto(type='submit') Đăng ký                
+block script
+
+   
