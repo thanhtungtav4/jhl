@@ -1,0 +1,62 @@
+.c-blog{
+    &__form{
+        .form-control{
+
+        }
+    }
+}
+.c-list{
+    &__item{
+        margin: 0 auto;
+    }
+    &__inner{
+        @include flex;
+        box-shadow: 0px 0px 8px 5px rgba(0, 0, 0, 0.25);
+        margin-bottom: 3.1rem;
+    }
+    &__img{
+        width: 276px;
+        height: auto;
+        @include sp{
+            width: 100%;
+        }
+    }
+    &__content{
+        padding: 20px 19px;
+        width: calc(100% - 276px);
+        @include sp{
+            width: 100%;
+        }
+    }
+    &__sub{
+        color: #E0E0E0;
+        font-weight: bold;
+        font-size: 1.4rem; 
+        line-height: 1.375;  
+    }
+    &__ttl{
+        font-size: 1.8rem;
+        line-height: 1.38; 
+        font-weight: 800;
+        color:black;
+    }
+    &__txt{
+        font-weight: 300;
+        font-size: 1.4rem;
+        line-height: 1.375;
+        margin-top: 4px;
+        font-style: normal;
+        color:black;
+    }
+    &__author{
+        font-size: 1.2rem;
+        font-weight: bold;
+        line-height: 1.333;
+        color:black;
+        span{
+            margin-left: 1.9rem;
+            color: #E0E0E0;
+            font-weight: 300;
+        }
+    }
+}
