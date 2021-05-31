@@ -14,11 +14,16 @@ block container
       .col-md-6
         h2.c-blog__ttl.ttl Cập nhật tin tức di trú và định cư nhanh nhất
         p.c-blog__txt Đăng ký để nhận thông báo về các tin tức mới nhất liên quan đến du lịch, du học và định cư nhé!
+        form.mt-4.mb-4
+          .form-row
+            .col
+              input.form-control.col-10(type='text' placeholder='*Nhập email tại đây')
+              a.c-blog__btn.btn.mt-4(href="#" ) Đăng ký
       .col-md-6
         picture
-          source(srcset=path+'assets/images/jhl-job.avif' type="image/avif")
-          source(srcset=path+'assets/images/jhl-job.webp' type="image/webp") 
-          img(src=path+'assets/images/jhl-job.jpg' type="image/jpg" alt="JHL TUYỂN DỤNG")
+          source(srcset=path+'assets/images/blog__img01.avif' type="image/avif")
+          source(srcset=path+'assets/images/blog__img01.webp' type="image/webp") 
+          img(src=path+'assets/images/blog__img01.jpg' type="image/jpg" alt="JHL TUYỂN DỤNG")
 
 
 block script

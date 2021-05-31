@@ -1,3 +1,14 @@
 /*------------------------------------------------------------
 	Form
 ------------------------------------------------------------*/
+.form-control{
+	&::placeholder{
+		font-weight: 300;
+		font-size: 1.4rem;
+		line-height: 1.375;
+		font-style: italic;
+		@include flex;
+		align-items: center;
+	}
+	height: 35px;
+}
