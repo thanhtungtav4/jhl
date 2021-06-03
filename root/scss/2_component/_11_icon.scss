@@ -26,3 +26,24 @@
 		justify-content: flex-end;
 	}
 }
+.icon{
+	&__01{
+		display: inline-block;
+		position: relative;
+		width: 3.3rem;
+		height: 3.3rem;
+		background-color: $color_main02;
+		border-radius: 50%;
+		align-items: center;
+		&::before{
+			content: '';
+			background-image: url(../../assets/images/i01.png);
+			height: 18px;
+			width: 18px;
+			left: 8px;
+			bottom: 8px;
+			right: 8px;
+			position: absolute;
+		}
+	}
+}
