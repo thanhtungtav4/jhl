@@ -7,6 +7,34 @@
 		font-weight: 300;
 		line-height: 1.357;
 	}
+	&__list{
+		@include flex;
+		li{
+			margin: .7rem 0 1.2rem;
+			@include flex;
+			p{
+			  width: calc(100% - 45px);
+			  font-size: 1.4rem;
+			  line-height: 1.375;
+			  font-weight: 300;
+			}
+		}
+	}
+	&__img{
+		background-color: $color_main02;
+		padding: 16px;
+		border-radius: 50%;
+		width: 33px;
+		height: 33px;
+		margin-right: 11px;
+		position: relative;
+		img{
+			position: absolute;
+			left: 7px;
+			right: 7px;
+			top: 8px;
+		}
+	}
 }
 .c-customer{
 	img{
