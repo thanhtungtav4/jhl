@@ -1,0 +1,124 @@
+extends _layout/default
+
+block vars
+  -title        = 'JHL Home'
+  -description  = ''
+  -keywords     = ''
+  -pageID       = 'top'
+  -path         = ''
+  -slider       = true
+
+block container
+  section.c-intros.text-center.mx-auto
+    .container.container__inner.padding-bottom
+      .c-intros__inner
+        h1.c-intros__ttl.ttl TỔNG HỢP DỊCH VỤ TẠI JHL
+        p.c-intros__txt Không phải mọi giấc mơ đều trở thành sự thật, vì có những giấc mơ chỉ trở thành sự thật trong điều kiện lý tưởng. Với nền giáo dục và môi trường sống tiên tiến tại những quốc gia phát triển hàng đầu thế giới của Mỹ & Canada, JHL tin rằng sự nghiệp thành công và cuộc sống phồn thịnh không là mục tiêu nằm ngoài tầm với.
+        a.c-intros__btn.btn(href="#" ) Xem thêm
+  section.c-service
+    .container.container__inner
+      .row
+        .col-12.padding-top  
+          h2.c-service__ttl.ttl.mb-5.text-center DỊCH VỤ JHL ĐỒNG HÀNH CÙNG BẠN 
+        .col-md-3.col-6
+          .c-service__img 
+            img(src=path+'assets/images/img_user.jpg', alt="")
+          p Định cư Mỹ diện làm việc - EB3
+        .col-md-3.col-6
+          .c-service__img 
+            img(src=path+'assets/images/img_user.jpg', alt="")
+          p Định cư Canada - diện làm việc
+        .col-md-3.col-6
+          .c-service__img 
+            img(src=path+'assets/images/img_user.jpg', alt="")
+          p Tư vấn du học Mỹ & Canada
+        .col-md-3.col-6
+          .c-service__img 
+            img(src=path+'assets/images/img_user.jpg', alt="")
+          p Tư vấn du lịch Mỹ & Canada
+        .col-12.mx-auto.text-center.mt-5
+          a.c-slide__btn.btn.btn-radius0(href="#" ) TÌM HIỂU NGAY                               
+  section.c-procedure
+    .container.container__inner
+      ul.nav.nav-tabs
+        li.active
+          a(data-toggle='tab' href='#home') Home
+        li
+          a(data-toggle='tab' href='#menu1') Menu 1
+        li
+          a(data-toggle='tab' href='#menu2') Menu 2
+      .tab-content
+        #home.tab-pane.fade.in.active
+          h3 HOME
+          p Some content.
+        #menu1.tab-pane.fade
+          h3 Menu 1
+          p Some content in menu 1.
+        #menu2.tab-pane.fade
+          h3 Menu 2
+          p Some content in menu 2.
+
+  section.c-why
+    .container.container__why
+      .row
+        .col-12
+          h2.c-why__ttl.ttl.text-center VÌ SAO JHL ĐƯỢC KHÁCH HÀNG
+            | <br>TIN TƯỞNG LỰA CHỌN
+        .col-md-3.col-6
+          p.c-why__num 2000+
+          picture
+            source(srcset=path+'assets/images/icon_note.webp' type="image/webp")
+            img(src=path+'assets/images/icon_note.png' type="image/png" alt="Visa Đầu Tư Định Cư EB3 đã và đang được thụ lý")
+          p.c-why__txt Visa Đầu Tư Định Cư EB3 đã và đang được thụ lý
+        .col-md-3.col-6  
+          p.c-why__num 600+
+          picture
+            source(srcset=path+'assets/images/icon_note.webp'  type="image/webp")
+            img(src=path+'assets/images/icon__book.png' type="image/png" alt="Hồ sơ di trú thành công nộp vào Sở di trú Mỹ")
+          p.c-why__txt Hồ sơ di trú thành công nộp vào Sở di trú Mỹ
+        .col-md-3.col-6  
+          p.c-why__num 1000+
+          picture
+            source(srcset=path+'assets/images/icon__partner.webp' type="image/webp")
+            img(src=path+'assets/images/icon__partner.png' type="image/png" alt="Thường trú nhân và gia đình hiện thực hóa ước mơ định cư cùng JHL")
+          p.c-why__txt Thường trú nhân và gia đình hiện thực hóa ước mơ định cư cùng JHL
+        .col-md-3.col-6  
+          p.c-why__num 6 tháng
+          picture
+            source(srcset=path+'assets/images/icon__time.webp' type="image/webp")
+            img(src=path+'assets/images/icon__time.png' type="image/png" alt="Thời gian chấp nhận hồ sơ EB-3 kỷ lục") 
+          p.c-why__txt  Thời gian chấp nhận hồ sơ EB-3 kỷ lục     
+  section.c-trust
+    .container
+      .row
+        .col-10.mx-auto.text-center.mb-5
+          h2.ttl.c-trust__ttl QUYỀN LỢI CỦA KHÁCH HÀNG LÀ ƯU TIÊN HÀNG ĐẦU CỦA JHL   
+        .swiper-container.customer-swiper.mt-4
+          .swiper-wrapper
+            .swiper-slide.text-center
+              img.c-trust__img(src=path+'assets/images/customer_03.jpg' type="image/jpg")
+              .c-trust__content.position-relative
+                img.c-trust__tag.position-absolute(src=path+'assets/images/tag.png'  type="image/png")
+                p.c-trust__name Nguyễn Thanh Toàn 
+                p.c-trust__local Định cư EB-3
+                p.c-trust__txt Cả gia đình tôi đã đến Mỹ được hơn 1 tháng mà tôi vẫn thấy lâng lâng vì vui sướng. Tôi có việc làm ngay khi đến đây và con tôi được đi học miễn phí. Các thủ tục mướn nhà, đăng ký việc làm, hòa nhập cộng đồng... đều được JHL quan tâm nhiệt tình. Thật sự cảm ơn JHL rất nhiều vì đã hỗ trợ gia đình tôi chu đáo.
+            .swiper-slide.text-center
+              img.c-trust__img(src=path+'assets/images/customer_03.jpg' type="image/jpg")
+              .c-trust__content.position-relative
+                img.c-trust__tag.position-absolute(src=path+'assets/images/tag.png'  type="image/png")
+                p.c-trust__name Nguyễn Thanh Toàn 
+                p.c-trust__local Định cư EB-3
+                p.c-trust__txt Cả gia đình tôi đã đến Mỹ được hơn 1 tháng mà tôi vẫn thấy lâng lâng vì vui sướng. Tôi có việc làm ngay khi đến đây và con tôi được đi học miễn phí. Các thủ tục mướn nhà, đăng ký việc làm, hòa nhập cộng đồng... đều được JHL quan tâm nhiệt tình. Thật sự cảm ơn JHL rất nhiều vì đã hỗ trợ gia đình tôi chu đáo.
+            .swiper-slide.text-center
+              img.c-trust__img(src=path+'assets/images/customer_03.jpg' type="image/jpg")
+              .c-trust__content.position-relative
+                img.c-trust__tag.position-absolute(src=path+'assets/images/tag.png'  type="image/png")
+                p.c-trust__name Nguyễn Thanh Toàn 
+                p.c-trust__local Định cư EB-3
+                p.c-trust__txt Cả gia đình tôi đã đến Mỹ được hơn 1 tháng mà tôi vẫn thấy lâng lâng vì vui sướng. Tôi có việc làm ngay khi đến đây và con tôi được đi học miễn phí. Các thủ tục mướn nhà, đăng ký việc làm, hòa nhập cộng đồng... đều được JHL quan tâm nhiệt tình. Thật sự cảm ơn JHL rất nhiều vì đã hỗ trợ gia đình tôi chu đáo.
+          // Add Pagination
+          .swiper-pagination    
+  
+block script
+
+   

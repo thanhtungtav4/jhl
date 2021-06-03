@@ -352,3 +352,27 @@
 		text-align: justify;
 	}
 }
+.c-intros{
+	background-image: url(../../assets/images/bg-service.jpg);
+    background-size: cover;
+    background-position: center;
+	&__ttl{
+		color: $color_main02;
+		margin-bottom: 1.5rem;
+	}
+	&__txt{
+		font-weight: 300;
+		font-size: 1.4rem;
+		text-align: center;
+		line-height: 1.357;
+		color: #E0E0E0;
+	}
+	&__btn{
+		margin-top: 2.2rem;
+	}
+	&__inner{
+		padding: 7.3rem 0 8.2rem;
+		max-width: 714px;
+		margin: 0 auto;
+	}
+}
