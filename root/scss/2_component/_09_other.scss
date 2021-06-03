@@ -298,3 +298,57 @@
 		margin: 0 auto;
 	}
 }
+.c-jhl{
+	&__ttl{
+	 font-weight: 700;
+	 font-size: 2.4rem;
+	 color: $color_main;
+	 line-height: 1.375;
+	}
+	&__sub{
+		font-weight: bold;
+		font-size: 1.4rem;
+		color: #000000;
+		line-height: 1.375;
+	}
+	&__txt{
+		font-size: 1.4rem;
+		color: #000000;
+		line-height: 1.375;
+		font-weight: 300;
+	}
+}
+.c-admin{
+	&__inner{
+		@include flex;
+	}
+	&__content{
+		width: calc(100% - 198px);
+		margin-left: 2.1rem;
+		max-width: 769px;
+	}
+	&__img{
+		max-width: 177px;
+		max-height: 177px;
+		width: 100%;
+	}
+	&__ttl{
+		font-size: 36px;
+		font-weight: bold;
+		line-height: 1.36;
+		color: $color_main;
+	}
+	&__sub{
+		font-size: 1.8rem;
+		line-height: 1.38;
+		color: $color_main;
+		font-weight: 800;
+	}
+	&__txt{
+		font-size: 1.8rem;
+		line-height: 1.38;
+		font-weight: 600;
+		padding-top: 5px;
+		text-align: justify;
+	}
+}
