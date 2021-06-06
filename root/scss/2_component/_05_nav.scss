@@ -154,53 +154,79 @@
 				}
 			}
 		}
-		.tab__inner{
-			div.tab-frame {
-				input {
-					display: none;
-					&:checked {
-						+ {
-							label {
-								background: black;
-								color: white;
-								cursor: default;
-							}
-						}
-					}
-					&:nth-of-type(1) {
-						&:checked {
-							~ {
-								.tab {
-									&:nth-of-type(1) {
-										display: block;
-									}
-								}
-							}
-						}
-					}
-					&:nth-of-type(2) {
-						&:checked {
-							~ {
-								.tab {
-									&:nth-of-type(2) {
-										display: block;
-									}
-								}
-							}
-						}
-					}
-				}
-				label {
-					display: block;
-					float: left;
-					padding: 5px 10px;
-					cursor: pointer;
-				}
-				div.tab {
-					display: none;
-					padding: 5px 10px;
-					clear: left;
+		.c-procedure{
+			margin-top: 7.7rem;
+			&__nav{
+				padding: 4.6rem 0;
+				@include flex-center;
+				label{
+					width: calc(50% - 22px);
+					text-align: center;
+					font-size: 2.4rem;
+					font-weight: bold;
+					margin: 0 11px;
 				}
 			}
+			.tab__inner{
+				div.tab-frame {
+					input {
+						display: none;
+						&:checked {
+							+ {
+								label {
+									background: $color_main02;
+									color: $color_main;
+									cursor: default;
+								}
+							}
+						}
+						&:nth-of-type(1) {
+							&:checked {
+								~ {
+									.tab {
+										&:nth-of-type(1) {
+											display: block;
+										}
+									}
+								}
+							}
+						}
+						&:nth-of-type(2) {
+							&:checked {
+								~ {
+									.tab {
+										&:nth-of-type(2) {
+											display: block;
+										}
+									}
+								}
+							}
+						}
+					}
+					label {
+						display: block;
+						float: left;
+						cursor: pointer;
+						padding: 6px 0;
+						background: #C0BABA;
+						border-radius: 5px;
+						color: #fff;
+					}
+					div.tab {
+						display: none;
+						padding: 5px 10px;
+						clear: left;
+						margin-top: 4.6rem;
+						img{
+							max-width: 100%;
+							width: 100%;
+							display: inline-block;
+							
+						}
+					}
+				}
+			}
+
 		}
+
 	
