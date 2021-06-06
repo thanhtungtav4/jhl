@@ -39,25 +39,14 @@ block container
         .col-12.mx-auto.text-center.mt-5
           a.c-slide__btn.btn.btn-radius0(href="#" ) TÌM HIỂU NGAY                               
   section.c-procedure
-    .container.container__inner
-      ul.nav.nav-tabs
-        li.active
-          a(data-toggle='tab' href='#home') Home
-        li
-          a(data-toggle='tab' href='#menu1') Menu 1
-        li
-          a(data-toggle='tab' href='#menu2') Menu 2
-      .tab-content
-        #home.tab-pane.fade.in.active
-          h3 HOME
-          p Some content.
-        #menu1.tab-pane.fade
-          h3 Menu 1
-          p Some content in menu 1.
-        #menu2.tab-pane.fade
-          h3 Menu 2
-          p Some content in menu 2.
-
+    .container.container__inner.tab__inner
+     .tab-frame
+      input#tab1(type='radio' checked='' name='tab')
+      label(for='tab1') tab1
+      input#tab2(type='radio' name='tab')
+      label(for='tab2') tab2
+      .tab sample content 1
+      .tab sample content 2
   section.c-why
     .container.container__why
       .row

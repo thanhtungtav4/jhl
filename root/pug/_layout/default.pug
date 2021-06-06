@@ -8,7 +8,7 @@ block vars
   -path         = ''
   -slider       = ''
 doctype html
-html
+html(lang='vi')
   head
     meta(charset='utf-8')
     meta(name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no")
@@ -26,9 +26,9 @@ html
     main.l-main
       block container
     include ../_modules/footer
-    script(src=path+"assets/js/bootstrap.min.js")
     if slider == true 
       script(src="https://unpkg.com/swiper/swiper-bundle.min.js")
       script(src=path+"assets/js/swiper.js") 
-    script(src=path+"assets/js/common.js")  
+    script(src=path+"assets/js/common.js") 
+    script(src=path+"assets/js/tab.js") 
     block script
