@@ -224,6 +224,10 @@
 			background-position: center;
 			content: '';
 			position: absolute;
+			@include sp{
+				width: 4.5rem;
+				height: 5.9rem;
+			}
 		}
 		&::before{
 			margin: -2% -1%;
@@ -231,6 +235,9 @@
 		&::after{
 			transform: rotate(180deg);
 			margin: -3% 0%;
+		}
+		@include sp{
+			font-size: 2.6rem;
 		}
 	}
 }
