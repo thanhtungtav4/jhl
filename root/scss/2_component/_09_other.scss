@@ -439,7 +439,39 @@
 	}
 }
 .c-event{
+	color: $color2;
 	&__count{
+		padding: 20px 0;
 		background-color: $color_main;
+	}
+	&__ttlc{
+		font-weight: 800;
+		font-size: 1.8rem;
+		line-height: 1.38;
+		max-width: 117px;
+		@include sp{
+			max-width: 100%;
+			text-align: center;
+			margin: 0 auto;
+		}
+	}
+	#countdown{
+		ul{
+			@include flex-center;
+			li{
+				@include flex;
+				flex-direction: column;
+				font-size: 1.8rem;
+				font-weight: bold;
+				padding: 0 18px;
+				border-radius: 3px;
+				border: 2px solid #960000;
+				margin: 0 10px;
+				span{
+					font-weight: bold;
+					font-size: 3.6rem;
+				}
+			}
+		}
 	}
 }
