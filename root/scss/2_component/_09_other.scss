@@ -414,3 +414,27 @@
 			}
 		}		
 }
+.c-user{
+	padding: 6rem 0;
+	&__ttl{
+		margin: 0 auto;
+		text-align: center;
+	}
+	&__list{
+		li{
+			padding: 8px 0;
+			position: relative;
+			right: -15px;
+			&::before{
+				position: absolute;
+				content: '';
+				width: 13px;
+				height: 13px;
+				background-image: url(../../assets/images/icon__next.jpg);
+				background-size: 100%;
+				background-position: center;
+				left: -20px;
+			}
+		}
+	}
+}

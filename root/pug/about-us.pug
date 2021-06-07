@@ -7,6 +7,7 @@ block vars
   -pageID       = 'top'
   -path         = ''
   -slider       = true
+  -lightbox       = true
 
 block container
   .swiper-container.swiper-banner
@@ -162,30 +163,20 @@ block container
       .c-images__inner 
         #gallery.gallery
           // Grid column
-          .mb-3.pics.animation.all
-            img.img-fluid(src='https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20(73).jpg' alt='Card image cap')
-          // Grid column
-          // Grid column
-          .mb-3.pics.animation.all
-            img.img-fluid(src='https://mdbootstrap.com/img/Photos/Vertical/mountain1.jpg' alt='Card image cap')
-          // Grid column
-          // Grid column
-          .mb-3.pics.animation.all
-            img.img-fluid(src='https://mdbootstrap.com/img/Photos/Vertical/mountain2.jpg' alt='Card image cap')
-          // Grid column
-          // Grid column
-          .mb-3.pics.animation.all
-            img.img-fluid(src='https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20(35).jpg' alt='Card image cap')
-          // Grid column
-          // Grid column
-          .mb-3.pics.animation.all
-            img.img-fluid(src='https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20(18).jpg' alt='Card image cap')
-          // Grid column
-          // Grid column
-          .mb-3.pics.animation.all
-            img.img-fluid(src='https://mdbootstrap.com/img/Photos/Vertical/mountain3.jpg' alt='Card image cap')
-          // Grid column
-        // Grid row
+          a.mb-3.pics.animation.all(data-fslightbox href=path+'assets/images/img__box01.jpg')
+            img.img-fluid(src=path+'assets/images/img__box01.jpg' alt='Card image cap')
+          a.mb-3.pics.animation.all(data-fslightbox href=path+'assets/images/img_winner.jpg')
+            img.img-fluid(src=path+'assets/images/img_winner.jpg' alt='Card image cap')
+          a.mb-3.pics.animation.all(data-fslightbox href=path+'assets/images/diverse-workers.jpg')
+            img.img-fluid(src=path+'assets/images/diverse-workers.jpg' alt='Card image cap')
+          a.mb-3.pics.animation.all(data-fslightbox href=path+'assets/images/img__box04.jpg')
+            img.img-fluid(src=path+'assets/images/img__box04.jpg' alt='Card image cap')
+          a.mb-3.pics.animation.all(data-fslightbox href=path+'assets/images/img__box05.jpg')
+            img.img-fluid(src=path+'assets/images/img__box05.jpg' alt='Card image cap')
+          a.mb-3.pics.animation.all(data-fslightbox href=path+'assets/images/img__box06.jpg')
+            img.img-fluid(src=path+'assets/images/img__box06.jpg' alt='Card image cap')
+          a.mb-3.pics.animation.all(data-fslightbox href=path+'assets/images/img__box01.jpg')
+            img.img-fluid(src=path+'assets/images/img__box01.jpg' alt='Card image cap')         
         .col-12.mt-4
           a.c-jintro__link.m-link.justify-content-center(href="#" )
            |  Ứng tuyển vào JHL
