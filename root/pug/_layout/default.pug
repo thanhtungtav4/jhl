@@ -8,6 +8,7 @@ block vars
   -path         = ''
   -slider       = ''
   -lightbox     = ''
+  -count        = ''
 doctype html
 html(lang='vi')
   head
@@ -32,5 +33,7 @@ html(lang='vi')
       script(src=path+"assets/js/swiper.js") 
     script(src=path+"assets/js/common.js") 
     if lightbox == true 
-    script(src=path+"assets/js/fslightbox.js") 
+      script(src=path+"assets/js/fslightbox.js") 
+    if count == true   
+      script(src=path+"assets/js/count.js") 
     block script
