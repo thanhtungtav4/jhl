@@ -1,4 +1,9 @@
 @charset 'utf-8';
+@mixin sp {
+	@media screen and (max-width: #{$breakpoint1}) {
+		@content;
+	}
+}
 /*------------------------------------------------------------
 	Reset
 ------------------------------------------------------------*/
@@ -171,6 +176,12 @@ form label {
 }
 .padding-top{
 	padding-top: 5rem;
+	&13{
+		padding-top: 13rem;
+		@include sp{
+			padding-top: 6rem;
+		}
+	}
 }
 .padding-bottom{
 	padding-bottom: 5rem;

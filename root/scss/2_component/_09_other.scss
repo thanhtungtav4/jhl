@@ -367,9 +367,24 @@
 	background-image: url(../../assets/images/bg-service.jpg);
     background-size: cover;
     background-position: center;
+	&--sub{
+		background-image: url(../../assets/images/bg__event.jpg);
+		background-position: bottom;
+    	background-repeat: no-repeat;
+	}
 	&__ttl{
 		color: $color_main02;
 		margin-bottom: 1.5rem;
+		&--sub{
+			color: $color_main;
+			font-size: 4.8rem;
+			font-weight: 900;
+		}
+	}
+	&__date{
+		color: $color_main;
+		font-size: 3.6rem;
+		font-weight: bold;
 	}
 	&__txt{
 		font-weight: 300;
@@ -385,6 +400,10 @@
 		padding: 7.3rem 0 8.2rem;
 		max-width: 714px;
 		margin: 0 auto;
+		&--sub{
+			padding: 5.8rem 0;
+			max-width: 90%;
+		}
 	}
 }
 .c-images{
@@ -455,6 +474,46 @@
 			margin: 0 auto;
 		}
 	}
+	&__txt{
+		color: #000000;
+		margin-bottom: 1.2rem;
+		max-width: 968px;
+		font-weight: 300;
+		font-size: 1.4rem;
+	}
+	&__item{
+		@include flex;
+	}
+	&__num{
+		width: 7.8rem;
+		height: 7.8rem;	
+		color: $color_main02;
+		background-color: $color_main;
+		background-size: cover;
+		font-size: 3.6rem;
+		font-weight: bold;
+		border-radius: 50%;
+		@include flex-center;
+	}
+	ul{
+		li{
+			color: #000000;
+			font-weight: 300;
+			font-size: 1.4rem;	
+			@include flex; 
+			& + li{
+				margin-top: 3rem;
+			}
+		}
+	}
+	&__content{
+		width: calc(100% - 99px);
+		margin-left: 21px;
+	}
+	&__title{
+		font-weight: 800;
+		font-size: 1.8rem
+	}
 	#countdown{
 		ul{
 			@include flex-center;
@@ -467,6 +526,7 @@
 				border-radius: 3px;
 				border: 2px solid #960000;
 				margin: 0 10px;
+				color: $color2;
 				span{
 					font-weight: bold;
 					font-size: 3.6rem;
@@ -533,5 +593,56 @@
 		color: $color2;
 		max-width: 426px;
 		text-align: left;
+	}
+}
+.c-pinfo{
+	&__list{
+		@include flex-jbetween;
+		flex-wrap: wrap;
+		li{
+			width: calc(50% - 20px);
+			@include flex-jbetween;
+			
+			@include sp{
+				width: 100%;
+				margin-bottom: 2rem;
+			}
+		}
+	}
+	&__content{
+		width: calc(100% - 198px);
+		padding: 15px 20px 27px 31px;
+		@include sp{
+			width: calc(100% - 100px);
+			padding: 0 15px;
+		}
+		.ttl{
+			font-size: 2.4rem;
+			font-weight: 700;
+			line-height: 1.35;
+		}
+	}
+	&__img{
+		width: 198px;
+		@include sp{
+			width: 90px;
+		}
+	}
+	&__social{
+		@include flex;
+		li{
+			width: 22px;
+			height: auto;
+			padding-right: 5px;
+		}
+	}
+	&__sub{
+		font-size: 1.8rem;
+		font-weight: 700;
+		color: $color_main;
+	}
+	&__txt{
+		font-size: 1.4rem;
+		font-weight: 300;
 	}
 }
