@@ -1,0 +1,65 @@
+extends _layout/default
+
+block vars
+  -title        = 'Blog chi tiết - JHL Home'
+  -description  = ''
+  -keywords     = ''
+  -pageID       = 'top'
+  -path         = ''
+  -slider       = false
+
+block container
+  section.c-news.py-5.p-sm-3
+    .container.container__inner
+      .row
+        .col-12
+          h2.ttl.c-news__ttl.text-center.mb-5 TIN TỨC & SỰ KIỆN
+        .col-md-4.col-6.mt-3
+          .card.shadow-sm.m-lg-3.m-md-2
+            img(src=path+'assets/images/news__img.jpg' type="image/jpg" alt="news")
+            .card-body.p-md-4.p-2
+              h4.c-news__name.mb-3 Lorem ipsum dolor sit amet consectetur adipiscing
+              p.card-text.c-news__txt
+                | Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis vitae ultricies turpis. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+              .d-flex.justify-content-between.align-items-center.mt-4
+                p.c-news__time 23, April 2021
+                a.c-news__btn.btn(href="#" ) Xem thêm
+        .col-md-4.col-6.mt-3
+          .card.shadow-sm.m-lg-3.m-md-2
+            img(src=path+'assets/images/news__img.jpg' type="image/jpg" alt="news")
+            .card-body.p-md-4.p-2
+              h4.c-news__name.mb-3 Lorem ipsum dolor sit amet consectetur adipiscing
+              p.card-text.c-news__txt
+                | Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis vitae ultricies turpis. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+              .d-flex.justify-content-between.align-items-center.mt-4
+                p.c-news__time 23, April 2021
+                a.c-news__btn.btn(href="#" ) Xem thêm
+        .col-md-4.col-6.mt-3.mx-auto
+          .card.shadow-sm.m-lg-3.m-md-2
+            img(src=path+'assets/images/news__img.jpg' type="image/jpg" alt="news")
+            .card-body.p-md-4.p-2
+              h4.c-news__name.mb-3 Lorem ipsum dolor sit amet consectetur adipiscing
+              p.card-text.c-news__txt
+                | Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis vitae ultricies turpis. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+              .d-flex.justify-content-between.align-items-center.mt-4
+                p.c-news__time 23, April 2021
+                a.c-news__btn.btn(href="#" ) Xem thêm
+  section.c-submit.py-5
+    .container.container__inner
+      .row.c-submit__shadow
+        .col-md-7.p-0
+          img(src=path+'assets/images/img-submit.jpg' type="image/jpg" alt="ĐĂNG KÝ NHẬN TƯ VẤN")
+        .col-md-5.py-4.align-self-center
+           .c-submit__inner
+            p.c-submit__ttl.ttl ĐĂNG KÝ NHẬN TƯ VẤN
+            form.mt-3.mb-3
+              .form-group
+                input.form-control(type='text' placeholder='Tên')
+              .form-group
+                input.form-control(type='text' placeholder='Email')
+              .form-group
+                input.form-control(type='text' placeholder='Số điện thoại')
+            button.btn.mt-4.d-block.mx-auto(type='submit') Đăng ký    
+block script
+
+   
