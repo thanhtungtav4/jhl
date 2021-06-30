@@ -362,6 +362,22 @@
 		padding-top: 5px;
 		text-align: justify;
 	}
+	&__border{
+		padding: 34px 0;
+		margin-top: 31px;
+		border-top: 2px solid #E0E0E0;
+		border-bottom: 2px solid #E0E0E0;
+	}
+	&__queue{
+		font-weight: 300;
+		font-size: 1.4;
+		max-width: 453px;
+	}
+	.c-icon{
+		img{
+			width: 20px;
+		}
+	}
 }
 .c-intros{
 	background-image: url(../../assets/images/bg-service.jpg);
@@ -715,5 +731,15 @@
 	}
 	&__submit{
 		margin: 13rem 0;
+	}
+}
+.toc_container{
+	background: rgba(255, 226, 226, 0.8);
+	border-radius: 14px;
+	padding: 15px 47px;
+	p{
+		color: $color_main;
+		font-weight: 800;
+		font-size: 1.8rem;
 	}
 }
