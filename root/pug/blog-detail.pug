@@ -10,10 +10,11 @@ block vars
 
 block container
   section.c-blog 
-    picture.c-blog__banner 
-      source(srcset=path+'assets/images/blog_detail.avif' type="image/avif" )
-      source(srcset=path+'assets/images/blog_detail.webp' type="image/webp")
-      img(src=path+'assets/images/blog_detail.jpg' type="image/jpg" alt="blog") 
+    .c-blog__banner 
+      picture
+        source(srcset=path+'assets/images/blog_detail.avif' type="image/avif" )
+        source(srcset=path+'assets/images/blog_detail.webp' type="image/webp")
+        img(src=path+'assets/images/blog_detail.jpg' type="image/jpg" alt="blog") 
     .c-breadcrumb.container.container__inner
       nav(aria-label='breadcrumb')
         ol.breadcrumb

@@ -646,3 +646,74 @@
 		font-weight: 300;
 	}
 }
+.c-contact{
+	&__txt{
+		color: white;
+		@include sp{
+			text-align: center;
+		}
+	}
+	&__bg{
+		background-color: $color_main;
+		padding: 16px 0 26px;
+	}
+	&__ttl{
+		&--sub{
+			color: $color_main02;
+			font-size: 1.6rem;
+			font-weight: 700;
+			text-align: center;
+			margin-bottom: 10px;
+		}
+	}
+	&__lists{
+		@include flex;
+		justify-content: space-around;
+		@include sp{
+			justify-content: center;
+    		text-align: center;
+		}
+		&--sub{
+			li{
+				width: 35px;
+				margin-top: 16px;
+			}
+		}
+		li{
+			width: 56px;
+			margin-top: 18px;
+			@include max(992px){
+				width: 30%;
+			}
+		}
+	}
+	&__list{
+		@include flex-jbetween;
+		flex-wrap: wrap;
+	}
+	&__item{
+		width: 30%;
+		padding: 0 24px;
+		margin: 0 auto;
+		@include max(992px){
+			padding: 12px;
+		}
+		@include sp{
+			width: 100%;
+		}
+		&.borderlr{
+			border-left: 1px solid #430505;
+			border-right: 1px solid #430505;
+			@include sp{
+				border-left: 0;
+				border-right: 0;
+				border-top: 1px solid #430505;
+				border-bottom: 1px solid #430505;
+				padding: 3rem 0;
+			}
+		}
+	}
+	&__submit{
+		margin: 13rem 0;
+	}
+}

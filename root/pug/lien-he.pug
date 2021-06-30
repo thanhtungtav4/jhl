@@ -1,0 +1,76 @@
+extends _layout/default
+
+block vars
+  -title        = 'Liên hệ - JHL Home'
+  -description  = ''
+  -keywords     = ''
+  -pageID       = 'top'
+  -path         = ''
+  -slider       = false
+
+block container
+  section.c-blog 
+    .c-blog__banner
+      picture 
+        source(srcset=path+'assets/images/page_ser.avif' type="image/avif" )
+        source(srcset=path+'assets/images/page_ser.webp' type="image/webp")
+        img(src=path+'assets/images/page_ser.jpg' type="image/jpg" alt="blog") 
+      h1 LIÊN HỆ
+  section.c-contact.c-contact__bg 
+    .container.container__inner
+      ul.c-contact__list 
+        li.c-contact__item 
+          p.c-contact__ttl--sub HỖ TRỢ KHÁCH HÀNG  
+          p.c-contact__txt Bạn đang cần trao đổi với JHL ngay? Liên hệ với JHL thông qua 3 cách sau:
+          ul.c-contact__lists.c-contact__lists--sub  
+              li  
+                a(href, taget="_black")
+                  img(src=path+'assets/images/phone.png', alt="phone") 
+              li  
+                a(href, taget="_black")
+                  img(src=path+'assets/images/mail.png', alt="mail") 
+              li  
+                a(href, taget="_black")
+                  img(src=path+'assets/images/faq.png', alt="faq") 
+        li.c-contact__item.borderlr 
+          p.c-contact__ttl--sub VĂN PHÒNG ĐẠI DIỆN
+          p.c-contact__txt Bạn đang cần trao đổi với JHL ngay? Liên hệ với JHL thông qua 3 cách sau:
+        li.c-contact__item  
+          p.c-contact__ttl--sub FOLLOW JHL
+            ul.c-contact__lists 
+              li  
+                a(href, taget="_black")
+                  img(src=path+'assets/images/fb.png', alt="fb") 
+              li  
+                a(href, taget="_black")
+                  img(src=path+'assets/images/tw.png', alt="fb") 
+              li  
+                a(href, taget="_black")
+                  img(src=path+'assets/images/zl.png', alt="fb") 
+  section.c-contact__submit 
+    .container.container__inner
+      h2.ttl.c-contact__ttl.text-center ĐĂNG KÝ NHẬN TƯ VẤN
+      .c-contact__inner 
+        .row.mt-4
+          .col-6
+            input.form-control.m-2(type='text' placeholder='First Name*' aria-label='First Name*')
+          .col-6
+            input.form-control.m-2(type='text' placeholder='Last name' aria-label='Last name')
+          .col-6
+            input.form-control.m-2(type='email' placeholder='Email*' aria-label='Email*')
+          .col-6
+            input.form-control.m-2(type='number' placeholder='Phone number' aria-label='Phone number')
+          .col-6
+            input.form-control.m-2(type='text' placeholder='Website' aria-label='Company')
+          .col-6
+            input.form-control.m-2(type='text' placeholder='Company' aria-label='Company')
+          .col-12
+            textarea.form-control.m-2(rows='3' placeholder='What can we do for you?' )
+          .col-auto.mx-auto
+            button.btn.btn-radius0.mb-3.mt-4(type='submit') NHẬN TƯ VẤN
+  section.c-contact__map 
+    iframe(src='https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15680.021143523512!2d106.7116703!3d10.734075250000002!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x2c63bf49da2dd838!2zQ8O0bmcgVHkgQ-G7lSBQaOG6p24gS2luZ01pbGs!5e0!3m2!1sfr!2shk!4v1625041994820!5m2!1sfr!2shk' width='100%' height='392' style='border:0;' allowfullscreen='' loading='lazy')
+
+block script
+
+   
