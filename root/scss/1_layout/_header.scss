@@ -43,6 +43,35 @@ body.offcanvas-active {
 	}
 
 }
+.m-header{
+	width: 100%;
+	&__top{
+		@include flex-jbetween;
+	}
+	&__info{
+		@include flex;
+		width: calc(100% - 445px);
+		justify-content: flex-end;
+		align-items: center;
+		li{
+			@include flex;
+			img{
+				height: 32px;
+			}
+			&:nth-of-type(2){
+				margin-left: 80px;
+			}
+			p{
+				font-size: 1.2rem;
+    			font-weight: 700;
+			}
+		}
+	}
+	&__menu{
+		@include flex-jbetween
+	}
+	
+}
 .gg-menu{
 	box-sizing: border-box;
 	position: relative;
