@@ -1,36 +1,44 @@
 nav#navbar_main.mobile-offcanvas.navbar.navbar-expand-md.pt-0.pb-0
-  .container
-    .offcanvas-header
-      button.btn-close.float-end
-    //- a.navbar-brand(href='#')
-    //-   picture
-    //-    img(src=path+'assets/images/jhl_logo.png' alt="JHL logo" height="97")
-    .m-header
+  .offcanvas-header.container
+    button.btn-close.float-end
+  .m-header
+    .container
       .m-header__top
-        .m-header__logo 
-          a(href)
-            img(src=path+'assets/images/jhl_logo.png', alt="JHL logo" height="97")
-        ul.m-header__info 
-          li 
-            img(src=path+'assets/images/map-marker.png', alt="map maker")
-            .m-header__info--inner 
-              p 21700 OXNARD ST, SUITE 360
-              P WOODLAND HILLS, CA 91367
-          li 
-            img(src=path+'assets/images/map-marker.png', alt="map maker")
-            .m-header__info--inner 
-              p (818) 887-7839
-              P MON-FRE 9AM-5PM     
-      .m-header__bottom 
+          .m-header__logo 
+            a(href)
+              img(src=path+'assets/images/jhl_logo.png', alt="JHL logo" height="97")
+          ul.m-header__info 
+            li 
+              img(src=path+'assets/images/map-marker.png', alt="map maker")
+              .m-header__info--inner 
+                p 21700 OXNARD ST, SUITE 360
+                P WOODLAND HILLS, CA 91367
+            li 
+              img(src=path+'assets/images/map-marker.png', alt="map maker")
+              .m-header__info--inner 
+                p (818) 887-7839
+                P MON-FRE 9AM-5PM     
+    .m-header__line 
+      .container
+        span      
+    .m-header__bottom.p-0
+      .container 
         ul.m-header__menu
           li.is_active
-            a.nav-link(href=path+'service.html') Định cư quốc tế 
+            a(href=path+'service.html') Định cư quốc tế 
           li
-            a.nav-link(href=path+'about-us.html')  Giới thiệu 
+            a(href=path+'about-us.html')  Giới thiệu 
           li
-            a.nav-link(href=path+'blog.html')  Tin tức & sự kiện   
+            a(href=path+'blog.html')  Tin tức & sự kiện   
           li
             a.nav-link(href='#')  Liên hệ
+        ul.m-header__mess 
+          li 
+            a(href) 
+              img(src=path+'assets/images/icon_mess.png', alt="chat")    
+          li 
+            a(href) 
+              img(src=path+'assets/images/icon_chat.png', alt="chat") 
 span.screen-darken
 nav.d-flex.d-md-none.justify-content-between.align-items-center.navbar.navbar__mobile
   a.navbar-brand(href='#') 

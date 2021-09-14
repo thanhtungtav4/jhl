@@ -9,154 +9,107 @@ block vars
   -slider       = true
 
 block container
-  .swiper-container.swiper-banner
-    // Additional required wrapper
-    .swiper-wrapper
-      // Slides
-      .swiper-slide.c-slide
+  .m-slider        
+    .m-slider__item
+      .m-slider__inner
         picture
-          source(srcset=path+'assets/images/dinh-cu-my-en-3.avif' type="image/avif")
-          source(srcset=path+'assets/images/dinh-cu-my-en-3.webp' type="image/webp")
-          img(src=path+'assets/images/dinh-cu-my-en-3.jpg' type="image/jpg" alt="ĐỊNH CƯ Canada")
-        .row.position-absolute.c-slide__box
-          .c-slide__inner
-            .col-12 
-              h3.c-slide__ttl ĐỊNH CƯ MỸ EB-3
-              p.c-slide__txt Trở thành công dân cường quốc Mỹ theo hình thức chuyên gia hoặc lao động với công việc dài hạn, chương trình an cư "hậu di trú" uy tín, đảm bảo cho thường trú nhân gia đình những quyền lợi tốt nhất 
-              a.c-slide__btn.btn(href="#" ) Xem thêm
-      //- .swiper-slide
-      //-   picture
-      //-     source(srcset=path+'assets/images/dinh-cu-canada.avif' type="image/avif" )
-      //-     source(srcset=path+'assets/images/dinh-cu-canada.webp' type="image/webp" )
-      //-     img(src=path+'assets/images/dinh-cu-canada.jpg' type="image/jpg"  alt="ĐỊNH CƯ MỸ EB-3")
-      //-   .row.position-absolute.c-slide__box
-      //-     .c-slide__inner
-      //-       .col-12 
-      //-         h3.c-slide__ttl ĐỊNH CƯ CANADA
-      //-         p.c-slide__txt Tận hưởng cuộc sống chất lượng cao hàng đầu thế giới với thị trường việc làm dồi dào, chương trinh giáo dục miễn phí và chế độ an sinh, phúc lợi xã hội tuyệt vời
-      //-         a.c-slide__btn.btn(href="#" ) Xem thêm
+          source(srcset=path+'assets/images/home_slider.avif' type="image/avif")
+          source(srcset=path+'assets/images/home_slider.webp' type="image/webp")
+          img(src=path+'assets/images/home_slider.jpg' type="image/jpg" alt="ĐỊNH CƯ Canada")
+        .m-slider__content
+          h3.m-slider__ttl ĐỊNH CƯ MỸ EB-3
+          p.m-slider__txt Trở thành công dân cường quốc Mỹ theo hình thức chuyên gia hoặc lao động với công việc dài hạn, chương trình an cư "hậu di trú" uy tín, đảm bảo cho thường trú nhân gia đình những quyền lợi tốt nhất
+          a.m-slider__btn.btn(href="#" ) Xem thêm              
+    .m-slider__item
+      .m-slider__inner
+        picture
+          source(srcset=path+'assets/images/home_slider.avif' type="image/avif")
+          source(srcset=path+'assets/images/home_slider.webp' type="image/webp")
+          img(src=path+'assets/images/home_slider.jpg' type="image/jpg" alt="ĐỊNH CƯ Canada")
+        .m-slider__content
+          h3.m-slider__ttl ĐỊNH CƯ MỸ EB-3
+          p.m-slider__txt Trở thành công dân cường quốc Mỹ theo hình thức chuyên gia hoặc lao động với công việc dài hạn, chương trình an cư "hậu di trú" uy tín, đảm bảo cho thường trú nhân gia đình những quyền lợi tốt nhất
+          a.m-slider__btn.btn(href="#" ) Xem thêm    
+
+  .m-call 
+    .container
+      p FOR A FREE CASE EVALUATION
+        strong , CALL (+84) 887-7839 
   .container.container__inner
-    section.c-intro.row.mt-5.align-items-center
+    section.c-ihome.row.mt-4.align-items-center
       .col-md-6
-        h2.c-intro__ttl.ttl GIỚI THIỆU VỀ JHL 
-        p.c-intro__txt Dựa trên nền tảng phát triển được xây dựng bởi mối quan hệ 
+        p.c-ihome__tag Giới thiệu
+        h2.c-ihome__ttl.ttl GIỚI THIỆU VỀ JHL 
+        p.c-ihome__txt Dựa trên nền tảng phát triển được xây dựng bởi mối quan hệ 
          | hợp tác nhiều năm với các hãng luật uy tín, kết hợp cùng quy trình tư vấn,
          | xúc tiến hồ sơ chuyên nghiệp, JHL tự hào là công ty đi đầu trong lĩnh vực 
          | Du học - Du lịch & Định cư Mỹ và Canada cam kết chất lượng dịch vụ, đảm bảo 
          |uy tín hàng đầu.
-        a.c-intro__btn.btn.mt-3(href="#" ) Xem thêm
+        a.c-ihome__btn.btn.mt-3(href="#" ) Tìm hiểu thêm
       .col-md-6
-        picture
-          source(srcset=path+'assets/images/diverse-workers.avif' type="image/avif")
-          source(srcset=path+'assets/images/diverse-workers.webp' type="image/webp") 
-          img(src=path+'assets/images/diverse-workers.jpg' type="image/jpg" alt="GIỚI THIỆU VỀ JHL ")
-    section.c-customer.row.pt-5.mx-auto
-      .col-10.mx-auto.text-center
-        h2.c-customer__ttl.ttl QUYỀN LỢI KHÁCH HÀNG LÀ ƯU TIÊN <br> HÀNG ĐẦU TẠI JHL 
-        p.c-customer__ttl02--sub Với tiêu chuẩn không thỏa hiệp, JHL là người bạn đồng 
-          | hành đáng tin cậy trong quá trình hội nhập và an cư tại nước ngoài, cam
-          | kết đem lại cho thường trú nhân và gia đình công việc ổn định, hưởng toàn
-          | bộ phúc lợi xã hội và nền y tế, giáo dục hàng đầu tại Mỹ & Canada.
-      .row
-       .col-md-6.position-relative.p-md-3.p-2.mx-auto
-        picture
-          source(srcset=path+'assets/images/customer_01.avif' type="image/avif" )
-          source(srcset=path+'assets/images/customer_01.webp' type="image/webp")
-          img(src=path+'assets/images/customer_01.jpg'  type="image/jpg" alt="QUY TRÌNH XÚC TIẾN HỒ SƠ NHANH CHÓNG") 
-          p.c-customer__ttl02.position-absolute QUY TRÌNH XÚC TIẾN <br> HỒ SƠ NHANH CHÓNG
-       .col-md-6.position-relative.p-md-3.p-2.mx-auto
-        picture
-          source(srcset=path+'assets/images/customer_02.avif' type="image/avif")
-          source(srcset=path+'assets/images/customer_02.webp' type="image/webp")
-          img(src=path+'assets/images/customer_02.jpg' type="image/jpg" alt="TƯ VẤN ĐỊNH CƯ THẲNG THẮN VÀ MINH BẠCH")
-          p.c-customer__ttl02.position-absolute TƯ VẤN ĐỊNH CƯ <br> THẲNG THẮN VÀ MINH BẠCH
-      .row
-        .col-md-4.col-6.position-relative.p-md-3.p-2.mx-auto
-          picture
-            source(srcset=path+'assets/images/customer_03.avif'  type="image/avif" )
-            source(srcset=path+'assets/images/customer_03.webp'  type="image/webp" )
-            img(src=path+'assets/images/customer_03.jpg'  type="image/jpg"  alt="DỊCH VỤ AN CƯ TẬN TÂM TRỌN GÓI")
-            p.c-customer__ttl02.position-absolute DỊCH VỤ AN CƯ <br> TẬN TÂM TRỌN GÓI
-        .col-md-4.col-6.position-relative.p-md-3.p-2.mx-auto
-          picture
-            source(srcset=path+'assets/images/customer_04.avif' type="image/avif")
-            source(srcset=path+'assets/images/customer_04.webp' type="image/webp")
-            img(src=path+'assets/images/customer_04.jpg' type="image/jpg" alt="ĐẢM BẢO QUYỀN LỢI BỞI LUẬT LAO ĐỘNG QUỐC GIA")
-            p.c-customer__ttl02.position-absolute ĐẢM BẢO QUYỀN LỢI <br> BỞI LUẬT LAO ĐỘNG <br>QUỐC GIA
-        .col-md-4.col-6.position-relative.p-md-3.p-2.mx-auto
-          picture
-            source(srcset=path+'assets/images/customer_05.avif' type="image/avif" )
-            source(srcset=path+'assets/images/customer_05.webp' type="image/webp" )
-            img(src=path+'assets/images/customer_05.jpg' type="image/jpg"  alt="CHÍNH SÁCH HOÀN TIỀN HẠN CHẾ RỦI RO")
-            p.c-customer__ttl02.position-absolute CHÍNH SÁCH <br>HOÀN TIỀN HẠN CHẾ <br>RỦI RO      
-  section.c-why
-    .container.container__why
+        .c-ihome__inner 
+          .c-ihome__ttl02 CÁC DỊCH VỤ CỦA CHÚNG TÔI
+          ul.c-ihome__box 
+            li CÁC DỊCH VỤ
+            li CÁC DỊCH VỤ
+            li CÁC DỊCH VỤ
+            li CÁC DỊCH VỤ
+            
+    section.m-interest
+      .m-interest__inner
+        .m-interest__content
+          .m-interest__ttl QUYỀN LỢI KHÁCH HÀNG LÀ ƯU TIÊN HÀNG ĐẦU TẠI JHL 
+          .m-interest__txt Với tiêu chuẩn không thỏa hiệp, JHL là người bạn đồng hành đáng tin cậy trong quá trình hội nhập và an cư tại nước ngoài, cam kết đem lại cho thường trú nhân và gia đình công việc ổn định, hưởng toàn bộ phúc lợi xã hội và nền y tế, giáo dục hàng đầu tại Mỹ & Canada.
+        ul 
+          li 
+            p QUI TRÌNH XÚC TIẾN HỒ SƠ NHANH CHÓNG
+          li 
+            p TƯ VẤN ĐỊNH CƯ THẲNG THẮN VÀ MINH BẠCH
+          li 
+            p DỊCH VỤ AN CƯ TẬN TÂM TRỌN ĐỜI  
+        ul    
+          li 
+            p ĐẢM BẢO QUYỀN LỢI BỞI LUẬT LAO ĐỘNG QUỐC GIA
+          li 
+            p CHÍNH SÁCH HOÀN TIỀN HẠN CHẾ RỦI RO                          
+  section.c-whome       
+    .container.c-whome__container
       .row
         .col-12
-          h2.c-why__ttl.ttl.text-center VÌ SAO JHL ĐƯỢC KHÁCH HÀNG
+          h2.c-whome__ttl.ttl.text-left VÌ SAO JHL ĐƯỢC KHÁCH HÀNG
             | <br>TIN TƯỞNG LỰA CHỌN
-        .col-md-3.col-6
-          p.c-why__num 2000+
-          picture
-            source(srcset=path+'assets/images/icon_note.webp' type="image/webp")
-            img(src=path+'assets/images/icon_note.png' type="image/png" alt="Visa Đầu Tư Định Cư EB3 đã và đang được thụ lý")
-          p.c-why__txt Visa Đầu Tư Định Cư EB3 đã và đang được thụ lý
-        .col-md-3.col-6  
-          p.c-why__num 600+
-          picture
-            source(srcset=path+'assets/images/icon_note.webp'  type="image/webp")
-            img(src=path+'assets/images/icon__book.png' type="image/png" alt="Hồ sơ di trú thành công nộp vào Sở di trú Mỹ")
-          p.c-why__txt Hồ sơ di trú thành công nộp vào Sở di trú Mỹ
-        .col-md-3.col-6  
-          p.c-why__num 1000+
-          picture
-            source(srcset=path+'assets/images/icon__partner.webp' type="image/webp")
-            img(src=path+'assets/images/icon__partner.png' type="image/png" alt="Thường trú nhân và gia đình hiện thực hóa ước mơ định cư cùng JHL")
-          p.c-why__txt Thường trú nhân và gia đình hiện thực hóa ước mơ định cư cùng JHL
-        .col-md-3.col-6  
-          p.c-why__num 6 tháng
-          picture
-            source(srcset=path+'assets/images/icon__time.webp' type="image/webp")
-            img(src=path+'assets/images/icon__time.png' type="image/png" alt="Thời gian chấp nhận hồ sơ EB-3 kỷ lục") 
-          p.c-why__txt  Thời gian chấp nhận hồ sơ EB-3 kỷ lục     
-  section.c-waffter
-    .container
-      .row
-        .col-md-7.mx-auto
-          p.c-waffter__txt.text-center Những con số ấn tượng này không chỉ được tạo nên nhờ năng 
-            |lực tư vấn hội nhập và an cư của JHL mà còn vì cái tâm và cái tầm đội ngũ
-            | trợ lý pháp lý tại JHL, mạng lưới đối tác rộng lớn cùng bề dày kinh nghiệm,
-            | đem đến dịch vụ định cư chất lượng tương xứng tầm giá.
-  section.c-trust
-    .container
-      .row
-        .col-10.mx-auto.text-center.mb-5
-          h2.ttl.c-trust__ttl QUYỀN LỢI CỦA KHÁCH HÀNG LÀ ƯU TIÊN HÀNG ĐẦU CỦA JHL     
-        .swiper-container.customer-swiper.mt-4
-          .swiper-wrapper
-            .swiper-slide.text-center
-              img.c-trust__img(src=path+'assets/images/customer_03.jpg' type="image/jpg")
-              .c-trust__content.position-relative
-                img.c-trust__tag.position-absolute(src=path+'assets/images/tag.png'  type="image/png")
-                p.c-trust__name Nguyễn Thanh Toàn 
-                p.c-trust__local Định cư EB-3
-                p.c-trust__txt Cả gia đình tôi đã đến Mỹ được hơn 1 tháng mà tôi vẫn thấy lâng lâng vì vui sướng. Tôi có việc làm ngay khi đến đây và con tôi được đi học miễn phí. Các thủ tục mướn nhà, đăng ký việc làm, hòa nhập cộng đồng... đều được JHL quan tâm nhiệt tình. Thật sự cảm ơn JHL rất nhiều vì đã hỗ trợ gia đình tôi chu đáo.
-            .swiper-slide.text-center
-              img.c-trust__img(src=path+'assets/images/customer_03.jpg' type="image/jpg")
-              .c-trust__content.position-relative
-                img.c-trust__tag.position-absolute(src=path+'assets/images/tag.png'  type="image/png")
-                p.c-trust__name Nguyễn Thanh Toàn 
-                p.c-trust__local Định cư EB-3
-                p.c-trust__txt Cả gia đình tôi đã đến Mỹ được hơn 1 tháng mà tôi vẫn thấy lâng lâng vì vui sướng. Tôi có việc làm ngay khi đến đây và con tôi được đi học miễn phí. Các thủ tục mướn nhà, đăng ký việc làm, hòa nhập cộng đồng... đều được JHL quan tâm nhiệt tình. Thật sự cảm ơn JHL rất nhiều vì đã hỗ trợ gia đình tôi chu đáo.
-            .swiper-slide.text-center
-              img.c-trust__img(src=path+'assets/images/customer_03.jpg' type="image/jpg")
-              .c-trust__content.position-relative
-                img.c-trust__tag.position-absolute(src=path+'assets/images/tag.png'  type="image/png")
-                p.c-trust__name Nguyễn Thanh Toàn 
-                p.c-trust__local Định cư EB-3
-                p.c-trust__txt Cả gia đình tôi đã đến Mỹ được hơn 1 tháng mà tôi vẫn thấy lâng lâng vì vui sướng. Tôi có việc làm ngay khi đến đây và con tôi được đi học miễn phí. Các thủ tục mướn nhà, đăng ký việc làm, hòa nhập cộng đồng... đều được JHL quan tâm nhiệt tình. Thật sự cảm ơn JHL rất nhiều vì đã hỗ trợ gia đình tôi chu đáo.
-          // Add Pagination
-          .swiper-pagination    
+        .col-md-6
+          .c-whome__item
+            picture
+              source(srcset=path+'assets/images/icon_note.webp' type="image/webp")
+              img(src=path+'assets/images/icon_note.png' type="image/png" alt="Visa Đầu Tư Định Cư EB3 đã và đang được thụ lý")
+            .c-whome__content
+              p.c-whome__num 2000+
+              p.c-whome__txt Visa Đầu Tư Định Cư EB3 đã và đang được thụ lý
+        .col-md-6
+          .c-whome__item
+            picture
+              source(srcset=path+'assets/images/icon_note.webp' type="image/webp")
+              img(src=path+'assets/images/icon_note.png' type="image/png" alt="Visa Đầu Tư Định Cư EB3 đã và đang được thụ lý")
+            .c-whome__content
+              p.c-whome__num 600+
+              p.c-whome__txt Hồ sơ di trú thành công nộp vào Sở di trú Mỹ
+        .col-md-6.mt-5
+          .c-whome__item
+            picture
+              source(srcset=path+'assets/images/icon_note.webp' type="image/webp")
+              img(src=path+'assets/images/icon_note.png' type="image/png" alt="Visa Đầu Tư Định Cư EB3 đã và đang được thụ lý")
+            .c-whome__content
+              p.c-whome__num 1000+
+              p.c-whome__txt Thường trú nhân và gia đình hiện thực hóa ước mơ định cư cùng JHL
+        .col-md-6.mt-5
+          .c-whome__item
+            picture
+              source(srcset=path+'assets/images/icon_note.webp' type="image/webp")
+              img(src=path+'assets/images/icon_note.png' type="image/png" alt="Visa Đầu Tư Định Cư EB3 đã và đang được thụ lý")
+            .c-whome__content
+              p.c-whome__num 6 tháng
+              p.c-whome__txt Thời gian chấp nhận hồ sơ EB-3 kỷ lục   
   section.c-story
     .container.container__inner
       .row
@@ -217,5 +170,22 @@ block container
                 input.form-control(type='text' placeholder='Số điện thoại')
             button.btn.mt-4.d-block.mx-auto(type='submit') Đăng ký                
 block script
-
-   
+  script.
+    $(document).ready(function(){
+      $(".m-slider").slick({
+        autoplay:true,
+        autoplaySpeed:10000,
+        speed:600,
+        slidesToShow:1,
+        slidesToScroll:1,
+        pauseOnHover:false,
+        dots:true,
+        pauseOnDotsHover:true,
+        cssEase:'linear',
+        draggable:false,
+        nav: false,
+        prevArrow: null,
+        nextArrow: null, 
+      });
+      
+    })

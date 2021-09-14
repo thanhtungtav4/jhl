@@ -25,23 +25,16 @@ body.offcanvas-active {
 	width: 100%;
 	visibility: visible;
 }
-.nav{
-	&bar{
-		background: #FFFFFF;
-		box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-		z-index: 8;
+#navbar_main{
+	@include flex;
+	justify-content: center;
+	flex-direction: column;
+	padding: 0;
+	@include min(768px){
+		.btn-close{
+			display: none;
+		}
 	}
-	&-link{
-		@include Nunito;
-		font-weight: 700;
-		color: $color_main;
-		font-size: 1.6rem;
-		line-height: 1.35;
-	}
-	&__mobile{
-		padding: 0;
-	}
-
 }
 .m-header{
 	width: 100%;
@@ -67,10 +60,80 @@ body.offcanvas-active {
 			}
 		}
 	}
-	&__menu{
-		@include flex-jbetween
+	&__line{
+		background-color: #FFD203;
+		height: 0.8rem;
+		position: relative;
+		max-width: 100vw;
+		span{
+			width: 143px;
+			height: 8px;
+			position: relative;
+			&::after{
+				content: '';
+				width: 143px;
+				height: 8px;
+				background-color: #806C6B;
+				position: absolute;
+			}
+		}
 	}
-	
+	&__bottom{
+		height: 80px;
+		align-items: center;
+		background-color: #B50E15; 
+		box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+		.container {
+			@include flex;
+			justify-content: space-between;
+		}
+	}
+	&__menu{
+		@include flex;
+		justify-content: flex-start;
+		li{
+			position: relative;
+			&::after{
+				content: '';
+				position: absolute;
+				bottom: 25%;
+				right: 0;
+				height: 50%;
+				width: 2px;
+				background-color: #E0E0E0;
+			}
+			&:nth-last-child(1){
+				&::after{
+					background-color: transparent;
+				}
+			}
+			a{
+				@include Nunito;
+				font-weight: 700;
+				color: #FFFFFF;
+				font-size: 1.6rem;
+				line-height: 1.375;
+				padding-right: 92px;
+				height: 80px;
+				@include flex;
+				align-items: center;
+				text-decoration: none;
+			}
+			&:not(:nth-child(1)){
+				a{
+					padding-left: 50px;
+					padding-right: 50px;
+				}
+			}
+			
+		}
+	}
+	&__mess{
+		@include flex;
+		width: 80px;
+		justify-content: space-between;
+		align-items: center;
+	}
 }
 .gg-menu{
 	box-sizing: border-box;

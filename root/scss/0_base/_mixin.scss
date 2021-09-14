@@ -37,6 +37,11 @@
 		@content;
 	}
 }
+@mixin tb {
+	@media (min-width: #{$breaksp}) and (max-width: #{$desktop-width - 1px}) {
+	  @content;
+	}
+  }
 
 
 /*------------------------------------------------------------

@@ -2,22 +2,22 @@
 <html lang="vi">
   <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>JHL Home</title>
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,400;0,600;0,700;0,800;0,900;1,400&amp;display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css">
     <link href="assets/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="assets/css/style.css">
   </head>
   <body>
     <nav class="mobile-offcanvas navbar navbar-expand-md pt-0 pb-0" id="navbar_main">
-      <div class="container">
-        <div class="offcanvas-header">
-          <button class="btn-close float-end"></button>
-        </div>
-        <div class="m-header">
+      <div class="offcanvas-header container">
+        <button class="btn-close float-end"></button>
+      </div>
+      <div class="m-header">
+        <div class="container">
           <div class="m-header__top">
             <div class="m-header__logo"> <a href><img src="assets/images/jhl_logo.png" alt="JHL logo" height="97"></a></div>
             <ul class="m-header__info"> 
@@ -35,12 +35,21 @@
               </li>
             </ul>
           </div>
-          <div class="m-header__bottom"> 
+        </div>
+        <div class="m-header__line"> 
+          <div class="container"><span>     </span></div>
+        </div>
+        <div class="m-header__bottom p-0">
+          <div class="container"> 
             <ul class="m-header__menu">
-              <li class="is_active"><a class="nav-link" href="service.html">Định cư quốc tế </a></li>
-              <li><a class="nav-link" href="about-us.html"> Giới thiệu </a></li>
-              <li><a class="nav-link" href="blog.html"> Tin tức & sự kiện   </a></li>
+              <li class="is_active"><a href="service.html">Định cư quốc tế </a></li>
+              <li><a href="about-us.html"> Giới thiệu </a></li>
+              <li><a href="blog.html"> Tin tức & sự kiện   </a></li>
               <li><a class="nav-link" href="#"> Liên hệ</a></li>
+            </ul>
+            <ul class="m-header__mess"> 
+              <li> <a href> <img src="assets/images/icon_mess.png" alt="chat"></a></li>
+              <li> <a href> <img src="assets/images/icon_chat.png" alt="chat"></a></li>
             </ul>
           </div>
         </div>
@@ -49,177 +58,139 @@
     <nav class="d-flex d-md-none justify-content-between align-items-center navbar navbar__mobile"><a class="navbar-brand" href="#"> 
         <picture><img src="assets/images/jhl_logo.png" alt="JHL logo" height="54"></picture></a><a class="nav_menu p-3" data-trigger="navbar_main"> <i class="gg-menu"></i></a></nav><span class="screen-darken"> </span>
     <main class="l-main">
-      <div class="swiper-container swiper-banner">
-        <!-- Additional required wrapper-->
-        <div class="swiper-wrapper">
-          <!-- Slides-->
-          <div class="swiper-slide c-slide">
+      <div class="m-slider">       
+        <div class="m-slider__item">
+          <div class="m-slider__inner">
             <picture>
-              <source srcset="assets/images/dinh-cu-my-en-3.avif" type="image/avif">
-              <source srcset="assets/images/dinh-cu-my-en-3.webp" type="image/webp"><img src="assets/images/dinh-cu-my-en-3.jpg" type="image/jpg" alt="ĐỊNH CƯ Canada">
+              <source srcset="assets/images/home_slider.avif" type="image/avif">
+              <source srcset="assets/images/home_slider.webp" type="image/webp"><img src="assets/images/home_slider.jpg" type="image/jpg" alt="ĐỊNH CƯ Canada">
             </picture>
-            <div class="row position-absolute c-slide__box">
-              <div class="c-slide__inner">
-                <div class="col-12"> 
-                  <h3 class="c-slide__ttl">ĐỊNH CƯ MỸ EB-3</h3>
-                  <p class="c-slide__txt">Trở thành công dân cường quốc Mỹ theo hình thức chuyên gia hoặc lao động với công việc dài hạn, chương trình an cư "hậu di trú" uy tín, đảm bảo cho thường trú nhân gia đình những quyền lợi tốt nhất </p><a class="c-slide__btn btn" href="#">Xem thêm</a>
-                </div>
-              </div>
+            <div class="m-slider__content">
+              <h3 class="m-slider__ttl">ĐỊNH CƯ MỸ EB-3</h3>
+              <p class="m-slider__txt">Trở thành công dân cường quốc Mỹ theo hình thức chuyên gia hoặc lao động với công việc dài hạn, chương trình an cư "hậu di trú" uy tín, đảm bảo cho thường trú nhân gia đình những quyền lợi tốt nhất</p><a class="m-slider__btn btn" href="#">Xem thêm              </a>
+            </div>
+          </div>
+        </div>
+        <div class="m-slider__item">
+          <div class="m-slider__inner">
+            <picture>
+              <source srcset="assets/images/home_slider.avif" type="image/avif">
+              <source srcset="assets/images/home_slider.webp" type="image/webp"><img src="assets/images/home_slider.jpg" type="image/jpg" alt="ĐỊNH CƯ Canada">
+            </picture>
+            <div class="m-slider__content">
+              <h3 class="m-slider__ttl">ĐỊNH CƯ MỸ EB-3</h3>
+              <p class="m-slider__txt">Trở thành công dân cường quốc Mỹ theo hình thức chuyên gia hoặc lao động với công việc dài hạn, chương trình an cư "hậu di trú" uy tín, đảm bảo cho thường trú nhân gia đình những quyền lợi tốt nhất</p><a class="m-slider__btn btn" href="#">Xem thêm    </a>
             </div>
           </div>
         </div>
       </div>
+      <div class="m-call"> 
+        <div class="container">
+          <p>FOR A FREE CASE EVALUATION<strong>, CALL (+84) 887-7839 </strong></p>
+        </div>
+      </div>
       <div class="container container__inner">
-        <section class="c-intro row mt-5 align-items-center">
+        <section class="c-ihome row mt-4 align-items-center">
           <div class="col-md-6">
-            <h2 class="c-intro__ttl ttl">GIỚI THIỆU VỀ JHL </h2>
-            <p class="c-intro__txt">
+            <p class="c-ihome__tag">Giới thiệu</p>
+            <h2 class="c-ihome__ttl ttl">GIỚI THIỆU VỀ JHL </h2>
+            <p class="c-ihome__txt">
               Dựa trên nền tảng phát triển được xây dựng bởi mối quan hệ hợp tác nhiều năm với các hãng luật uy tín, kết hợp cùng quy trình tư vấn,
               xúc tiến hồ sơ chuyên nghiệp, JHL tự hào là công ty đi đầu trong lĩnh vực 
               Du học - Du lịch & Định cư Mỹ và Canada cam kết chất lượng dịch vụ, đảm bảo 
               uy tín hàng đầu.
-            </p><a class="c-intro__btn btn mt-3" href="#">Xem thêm</a>
+            </p><a class="c-ihome__btn btn mt-3" href="#">Tìm hiểu thêm</a>
           </div>
           <div class="col-md-6">
-            <picture>
-              <source srcset="assets/images/diverse-workers.avif" type="image/avif">
-              <source srcset="assets/images/diverse-workers.webp" type="image/webp"><img src="assets/images/diverse-workers.jpg" type="image/jpg" alt="GIỚI THIỆU VỀ JHL ">
-            </picture>
+            <div class="c-ihome__inner"> 
+              <div class="c-ihome__ttl02">CÁC DỊCH VỤ CỦA CHÚNG TÔI</div>
+              <ul class="c-ihome__box"> 
+                <li>CÁC DỊCH VỤ</li>
+                <li>CÁC DỊCH VỤ</li>
+                <li>CÁC DỊCH VỤ</li>
+                <li>CÁC DỊCH VỤ</li>
+              </ul>
+            </div>
           </div>
         </section>
-        <section class="c-customer row pt-5 mx-auto">
-          <div class="col-10 mx-auto text-center">
-            <h2 class="c-customer__ttl ttl">QUYỀN LỢI KHÁCH HÀNG LÀ ƯU TIÊN <br> HÀNG ĐẦU TẠI JHL </h2>
-            <p class="c-customer__ttl02--sub">
-              Với tiêu chuẩn không thỏa hiệp, JHL là người bạn đồng hành đáng tin cậy trong quá trình hội nhập và an cư tại nước ngoài, cam
-              kết đem lại cho thường trú nhân và gia đình công việc ổn định, hưởng toàn
-              bộ phúc lợi xã hội và nền y tế, giáo dục hàng đầu tại Mỹ & Canada.
-            </p>
-          </div>
-          <div class="row">
-            <div class="col-md-6 position-relative p-md-3 p-2 mx-auto">
-              <picture>
-                <source srcset="assets/images/customer_01.avif" type="image/avif">
-                <source srcset="assets/images/customer_01.webp" type="image/webp"><img src="assets/images/customer_01.jpg" type="image/jpg" alt="QUY TRÌNH XÚC TIẾN HỒ SƠ NHANH CHÓNG">
-                <p class="c-customer__ttl02 position-absolute">QUY TRÌNH XÚC TIẾN <br> HỒ SƠ NHANH CHÓNG</p>
-              </picture>
+        <section class="m-interest">
+          <div class="m-interest__inner">
+            <div class="m-interest__content">
+              <div class="m-interest__ttl">QUYỀN LỢI KHÁCH HÀNG LÀ ƯU TIÊN HÀNG ĐẦU TẠI JHL </div>
+              <div class="m-interest__txt">Với tiêu chuẩn không thỏa hiệp, JHL là người bạn đồng hành đáng tin cậy trong quá trình hội nhập và an cư tại nước ngoài, cam kết đem lại cho thường trú nhân và gia đình công việc ổn định, hưởng toàn bộ phúc lợi xã hội và nền y tế, giáo dục hàng đầu tại Mỹ & Canada.</div>
             </div>
-            <div class="col-md-6 position-relative p-md-3 p-2 mx-auto">
-              <picture>
-                <source srcset="assets/images/customer_02.avif" type="image/avif">
-                <source srcset="assets/images/customer_02.webp" type="image/webp"><img src="assets/images/customer_02.jpg" type="image/jpg" alt="TƯ VẤN ĐỊNH CƯ THẲNG THẮN VÀ MINH BẠCH">
-                <p class="c-customer__ttl02 position-absolute">TƯ VẤN ĐỊNH CƯ <br> THẲNG THẮN VÀ MINH BẠCH</p>
-              </picture>
-            </div>
-          </div>
-          <div class="row">
-            <div class="col-md-4 col-6 position-relative p-md-3 p-2 mx-auto">
-              <picture>
-                <source srcset="assets/images/customer_03.avif" type="image/avif">
-                <source srcset="assets/images/customer_03.webp" type="image/webp"><img src="assets/images/customer_03.jpg" type="image/jpg" alt="DỊCH VỤ AN CƯ TẬN TÂM TRỌN GÓI">
-                <p class="c-customer__ttl02 position-absolute">DỊCH VỤ AN CƯ <br> TẬN TÂM TRỌN GÓI</p>
-              </picture>
-            </div>
-            <div class="col-md-4 col-6 position-relative p-md-3 p-2 mx-auto">
-              <picture>
-                <source srcset="assets/images/customer_04.avif" type="image/avif">
-                <source srcset="assets/images/customer_04.webp" type="image/webp"><img src="assets/images/customer_04.jpg" type="image/jpg" alt="ĐẢM BẢO QUYỀN LỢI BỞI LUẬT LAO ĐỘNG QUỐC GIA">
-                <p class="c-customer__ttl02 position-absolute">ĐẢM BẢO QUYỀN LỢI <br> BỞI LUẬT LAO ĐỘNG <br>QUỐC GIA</p>
-              </picture>
-            </div>
-            <div class="col-md-4 col-6 position-relative p-md-3 p-2 mx-auto">
-              <picture>
-                <source srcset="assets/images/customer_05.avif" type="image/avif">
-                <source srcset="assets/images/customer_05.webp" type="image/webp"><img src="assets/images/customer_05.jpg" type="image/jpg" alt="CHÍNH SÁCH HOÀN TIỀN HẠN CHẾ RỦI RO">
-                <p class="c-customer__ttl02 position-absolute">CHÍNH SÁCH <br>HOÀN TIỀN HẠN CHẾ <br>RỦI RO      </p>
-              </picture>
-            </div>
+            <ul> 
+              <li> 
+                <p>QUI TRÌNH XÚC TIẾN HỒ SƠ NHANH CHÓNG</p>
+              </li>
+              <li> 
+                <p>TƯ VẤN ĐỊNH CƯ THẲNG THẮN VÀ MINH BẠCH</p>
+              </li>
+              <li> 
+                <p>DỊCH VỤ AN CƯ TẬN TÂM TRỌN ĐỜI  </p>
+              </li>
+            </ul>
+            <ul>   
+              <li> 
+                <p>ĐẢM BẢO QUYỀN LỢI BỞI LUẬT LAO ĐỘNG QUỐC GIA</p>
+              </li>
+              <li> 
+                <p>CHÍNH SÁCH HOÀN TIỀN HẠN CHẾ RỦI RO                          </p>
+              </li>
+            </ul>
           </div>
         </section>
       </div>
-      <section class="c-why">
-        <div class="container container__why">
+      <section class="c-whome">      
+        <div class="container c-whome__container">
           <div class="row">
             <div class="col-12">
-              <h2 class="c-why__ttl ttl text-center">
+              <h2 class="c-whome__ttl ttl text-left">
                 VÌ SAO JHL ĐƯỢC KHÁCH HÀNG<br>TIN TƯỞNG LỰA CHỌN</h2>
             </div>
-            <div class="col-md-3 col-6">
-              <p class="c-why__num">2000+</p>
-              <picture>
-                <source srcset="assets/images/icon_note.webp" type="image/webp"><img src="assets/images/icon_note.png" type="image/png" alt="Visa Đầu Tư Định Cư EB3 đã và đang được thụ lý">
-              </picture>
-              <p class="c-why__txt">Visa Đầu Tư Định Cư EB3 đã và đang được thụ lý</p>
-            </div>
-            <div class="col-md-3 col-6"> 
-              <p class="c-why__num">600+</p>
-              <picture>
-                <source srcset="assets/images/icon_note.webp" type="image/webp"><img src="assets/images/icon__book.png" type="image/png" alt="Hồ sơ di trú thành công nộp vào Sở di trú Mỹ">
-              </picture>
-              <p class="c-why__txt">Hồ sơ di trú thành công nộp vào Sở di trú Mỹ</p>
-            </div>
-            <div class="col-md-3 col-6"> 
-              <p class="c-why__num">1000+</p>
-              <picture>
-                <source srcset="assets/images/icon__partner.webp" type="image/webp"><img src="assets/images/icon__partner.png" type="image/png" alt="Thường trú nhân và gia đình hiện thực hóa ước mơ định cư cùng JHL">
-              </picture>
-              <p class="c-why__txt">Thường trú nhân và gia đình hiện thực hóa ước mơ định cư cùng JHL</p>
-            </div>
-            <div class="col-md-3 col-6"> 
-              <p class="c-why__num">6 tháng</p>
-              <picture>
-                <source srcset="assets/images/icon__time.webp" type="image/webp"><img src="assets/images/icon__time.png" type="image/png" alt="Thời gian chấp nhận hồ sơ EB-3 kỷ lục">
-              </picture>
-              <p class="c-why__txt"> Thời gian chấp nhận hồ sơ EB-3 kỷ lục     </p>
-            </div>
-          </div>
-        </div>
-      </section>
-      <section class="c-waffter">
-        <div class="container">
-          <div class="row">
-            <div class="col-md-7 mx-auto">
-              <p class="c-waffter__txt text-center">
-                Những con số ấn tượng này không chỉ được tạo nên nhờ năng lực tư vấn hội nhập và an cư của JHL mà còn vì cái tâm và cái tầm đội ngũ
-                trợ lý pháp lý tại JHL, mạng lưới đối tác rộng lớn cùng bề dày kinh nghiệm,
-                đem đến dịch vụ định cư chất lượng tương xứng tầm giá.
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
-      <section class="c-trust">
-        <div class="container">
-          <div class="row">
-            <div class="col-10 mx-auto text-center mb-5">
-              <h2 class="ttl c-trust__ttl">QUYỀN LỢI CỦA KHÁCH HÀNG LÀ ƯU TIÊN HÀNG ĐẦU CỦA JHL     </h2>
-            </div>
-            <div class="swiper-container customer-swiper mt-4">
-              <div class="swiper-wrapper">
-                <div class="swiper-slide text-center"><img class="c-trust__img" src="assets/images/customer_03.jpg" type="image/jpg">
-                  <div class="c-trust__content position-relative"><img class="c-trust__tag position-absolute" src="assets/images/tag.png" type="image/png">
-                    <p class="c-trust__name">Nguyễn Thanh Toàn </p>
-                    <p class="c-trust__local">Định cư EB-3</p>
-                    <p class="c-trust__txt">Cả gia đình tôi đã đến Mỹ được hơn 1 tháng mà tôi vẫn thấy lâng lâng vì vui sướng. Tôi có việc làm ngay khi đến đây và con tôi được đi học miễn phí. Các thủ tục mướn nhà, đăng ký việc làm, hòa nhập cộng đồng... đều được JHL quan tâm nhiệt tình. Thật sự cảm ơn JHL rất nhiều vì đã hỗ trợ gia đình tôi chu đáo.</p>
-                  </div>
-                </div>
-                <div class="swiper-slide text-center"><img class="c-trust__img" src="assets/images/customer_03.jpg" type="image/jpg">
-                  <div class="c-trust__content position-relative"><img class="c-trust__tag position-absolute" src="assets/images/tag.png" type="image/png">
-                    <p class="c-trust__name">Nguyễn Thanh Toàn </p>
-                    <p class="c-trust__local">Định cư EB-3</p>
-                    <p class="c-trust__txt">Cả gia đình tôi đã đến Mỹ được hơn 1 tháng mà tôi vẫn thấy lâng lâng vì vui sướng. Tôi có việc làm ngay khi đến đây và con tôi được đi học miễn phí. Các thủ tục mướn nhà, đăng ký việc làm, hòa nhập cộng đồng... đều được JHL quan tâm nhiệt tình. Thật sự cảm ơn JHL rất nhiều vì đã hỗ trợ gia đình tôi chu đáo.</p>
-                  </div>
-                </div>
-                <div class="swiper-slide text-center"><img class="c-trust__img" src="assets/images/customer_03.jpg" type="image/jpg">
-                  <div class="c-trust__content position-relative"><img class="c-trust__tag position-absolute" src="assets/images/tag.png" type="image/png">
-                    <p class="c-trust__name">Nguyễn Thanh Toàn </p>
-                    <p class="c-trust__local">Định cư EB-3</p>
-                    <p class="c-trust__txt">Cả gia đình tôi đã đến Mỹ được hơn 1 tháng mà tôi vẫn thấy lâng lâng vì vui sướng. Tôi có việc làm ngay khi đến đây và con tôi được đi học miễn phí. Các thủ tục mướn nhà, đăng ký việc làm, hòa nhập cộng đồng... đều được JHL quan tâm nhiệt tình. Thật sự cảm ơn JHL rất nhiều vì đã hỗ trợ gia đình tôi chu đáo.</p>
-                  </div>
+            <div class="col-md-6">
+              <div class="c-whome__item">
+                <picture>
+                  <source srcset="assets/images/icon_note.webp" type="image/webp"><img src="assets/images/icon_note.png" type="image/png" alt="Visa Đầu Tư Định Cư EB3 đã và đang được thụ lý">
+                </picture>
+                <div class="c-whome__content">
+                  <p class="c-whome__num">2000+</p>
+                  <p class="c-whome__txt">Visa Đầu Tư Định Cư EB3 đã và đang được thụ lý</p>
                 </div>
               </div>
-              <!-- Add Pagination-->
-              <div class="swiper-pagination">   </div>
+            </div>
+            <div class="col-md-6">
+              <div class="c-whome__item">
+                <picture>
+                  <source srcset="assets/images/icon_note.webp" type="image/webp"><img src="assets/images/icon_note.png" type="image/png" alt="Visa Đầu Tư Định Cư EB3 đã và đang được thụ lý">
+                </picture>
+                <div class="c-whome__content">
+                  <p class="c-whome__num">600+</p>
+                  <p class="c-whome__txt">Hồ sơ di trú thành công nộp vào Sở di trú Mỹ</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6 mt-5">
+              <div class="c-whome__item">
+                <picture>
+                  <source srcset="assets/images/icon_note.webp" type="image/webp"><img src="assets/images/icon_note.png" type="image/png" alt="Visa Đầu Tư Định Cư EB3 đã và đang được thụ lý">
+                </picture>
+                <div class="c-whome__content">
+                  <p class="c-whome__num">1000+</p>
+                  <p class="c-whome__txt">Thường trú nhân và gia đình hiện thực hóa ước mơ định cư cùng JHL</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6 mt-5">
+              <div class="c-whome__item">
+                <picture>
+                  <source srcset="assets/images/icon_note.webp" type="image/webp"><img src="assets/images/icon_note.png" type="image/png" alt="Visa Đầu Tư Định Cư EB3 đã và đang được thụ lý">
+                </picture>
+                <div class="c-whome__content">
+                  <p class="c-whome__num">6 tháng</p>
+                  <p class="c-whome__txt">Thời gian chấp nhận hồ sơ EB-3 kỷ lục   </p>
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -303,7 +274,13 @@
       </section>
     </main>
     <footer>
-      <div class="container">
+      <div class="footer_call">
+        <p>Gọi ngay để nhận tư vấn </p><a href><span>
+            <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M4.5 0H1C0.45 0 0 0.45 0 1C0 10.39 7.61 18 17 18C17.55 18 18 17.55 18 17V13.51C18 12.96 17.55 12.51 17 12.51C15.76 12.51 14.55 12.31 13.43 11.94C13.33 11.9 13.22 11.89 13.12 11.89C12.86 11.89 12.61 11.99 12.41 12.18L10.21 14.38C7.38 12.93 5.06 10.62 3.62 7.79L5.82 5.59C6.1 5.31 6.18 4.92 6.07 4.57C5.7 3.45 5.5 2.25 5.5 1C5.5 0.45 5.05 0 4.5 0Z" fill="#730C0C"></path>
+            </svg></span><span>(+84) 0949111293</span></a>
+      </div>
+      <div class="container mt-3">
         <div class="row">
           <div class="col-md-6 col-lg-4 mx-auto my-md-4 my-0 mt-4 mb-1"><img src="assets/images/jhl_logo.png" alt="JHL logo">
             <p class="mt-5 mb-4 footer_bio">Founded in 1992 by Jean François Harvey, Harvey Law Group (HLG) has quickly evolved into a leading multinational law firm that has developed a worldwide reputation amongst discerning businesses, individuals and governments across Canada, Asia, ...</p>
@@ -347,8 +324,28 @@
         </div>
       </div>
     </footer>
-    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-    <script src="assets/js/swiper.js"> </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"> </script>
+    <script src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"> </script>
     <script src="assets/js/common.js"> </script>
+    <script>
+      $(document).ready(function(){
+        $(".m-slider").slick({
+          autoplay:true,
+          autoplaySpeed:10000,
+          speed:600,
+          slidesToShow:1,
+          slidesToScroll:1,
+          pauseOnHover:false,
+          dots:true,
+          pauseOnDotsHover:true,
+          cssEase:'linear',
+          draggable:false,
+          nav: false,
+          prevArrow: null,
+          nextArrow: null, 
+        });
+        
+      })
+    </script>
   </body>
 </html>
