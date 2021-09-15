@@ -186,3 +186,9 @@ form label {
 .padding-bottom{
 	padding-bottom: 5rem;
 }
+.onlypc{
+	display: inline-block;
+	@include sp{
+		display: none;
+	}
+}

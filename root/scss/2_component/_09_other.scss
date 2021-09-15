@@ -881,8 +881,12 @@
 	background-repeat: no-repeat;
 	background-size: cover;
 	padding: 67px 0 73px;
+	@include sp{
+		padding: 20px 0 50px;
+	}
 	&__container{
 		width: 700px;
+		max-width: 100%;
 		margin: 0 auto;
 	}
 	&__ttl{
@@ -894,34 +898,116 @@
 	}
 	&__item{
 		@include flex;
+		padding: 2rem 0px;
 	}
 	&__content{
-		margin-left: 21px;
-		width: calc(100% - 76px);
+		margin-left: 19px;
+		width: calc(100% - 98px);
 	}
 	&__num{
 		color: $color_main02;
 		font-weight: bold;
 		font-size: 3.6rem;
 		line-height: 1;
-		@include sp{
-			text-align: center;
-		}
-	}
-	picture{
-		@include sp{
-			display: flex;
-			justify-content: center;
-		}
 	}
 	&__txt{
 		font-weight: 600;
 		font-size: 1.8rem;
 		line-height: 1.38;
 		color: $color2;
+		text-align: left;
 		@include sp{
-			text-align: center;
-			margin: 24px auto ;
+			margin: 5px auto ;
 		}
 	}
 }
+.c-benefit{
+	margin-top: 5.7rem;
+	margin-bottom: 2rem;
+	&__ttl{
+		font-size: 3.6rem;	
+		color: #AAAAAA;
+	}
+	&__list{
+		@include flex;
+	}
+	&__item{
+			@include flex;
+			flex-direction: column;
+			text-align: center;
+			align-items: center;
+			background: #F3F3F3;
+			box-shadow: -4px 4px 4px rgba(0, 0, 0, 0.25);
+			text-align: center;
+			width: 376px;
+			height: 467px;
+			margin: 3rem auto 5rem;
+			align-items: center;
+			justify-content: center;
+		}
+	&__avt{
+		width: 87px;
+		height: 87px;
+		object-fit: cover;
+		border-radius: 50%;
+		margin-bottom: 20px;
+		text-align: center;
+		margin-left: auto;
+		margin-right: auto;
+	}
+	&__start  {
+		@include flex;
+		justify-content: center;
+		margin: 0 auto;
+		img{
+			width: 25px;
+			height: 25px;
+		}
+	}
+	&__name{
+		font-size: 2.4rem;
+		font-weight: bold;
+	}
+	&__local{
+		font-weight: 800;
+		font-size: 1.8rem;
+	}
+	&__txt{
+		max-width: 277px;
+		text-align: center;
+		margin: 32px auto 27px;
+	}
+	.slick{
+		&-slide{
+			transition: all 0.2s ease;
+			transform: scale(0.75);
+			@include flex;
+		}
+		&-active {
+			z-index: 1;
+			transform: scale(0.75) translate(150px);
+		}
+		&-center{
+			transform: scale(1);
+			position: relative;
+			z-index: 2;
+			&+.slick-slide {
+				z-index: 1;
+				transform: scale(0.75) translate(-150px);
+			}
+		}
+		&-dots{
+			bottom: -15px;
+			button{
+				background-color: $color_main02;
+			}
+			.slick-active{
+				transform: unset;
+				button {
+					background-color: $color_main;
+					
+				}
+			}
+		}
+	}
+}	
