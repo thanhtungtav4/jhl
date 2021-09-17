@@ -374,10 +374,13 @@
 			position: absolute;
 			margin-right: 6px;
 		}
+		span{
+			margin-left: 23px;
+		}
 	}
 	&__btn{
-		font-size: 1.2rem;
-		padding: 8px 4px;
+		padding: 8px 13px;
+		color:#780A0A;
 	}
 	&__txt{
 		overflow: hidden;
@@ -387,6 +390,9 @@
 		height: 69px;
 		display: -webkit-box;
 		-webkit-box-orient: vertical;
+	}
+	&__ttl{
+		color: #AAAAAA;
 	}
 }
 .c-submit{
@@ -1011,3 +1017,81 @@
 		}
 	}
 }	
+.m-story{
+	&__ttl{
+		color:#AAAAAA;
+	}
+	&__item{
+		width: 100%;
+		height: 221px;
+		background-color: #656565;
+		background-repeat: no-repeat;
+		background-size: cover;
+		background-position: center;
+		position: relative;
+	}
+	a{
+		h3{
+			position: absolute;
+			bottom: 25px;
+			left: 22px;
+			right: 21px;
+			color: $color_main02;
+			max-width: 267px;
+			font-weight: 600;
+			font-size: 1.8rem;
+			line-height: 1.38;
+			color: #ffffff;
+			overflow: hidden;
+			text-overflow: ellipsis;
+			-webkit-line-clamp: 3;
+			display: -webkit-box;
+			-webkit-box-orient: vertical;
+		}
+	}
+}
+.c-help{
+	margin: 7rem auto 9rem;
+	@include flex-center;
+	&__border{
+		border: 2px solid #B50E15;
+		box-sizing: border-box;
+		padding: 30px 90px 50px;
+		margin: 0 15px;
+		max-width: 1110px;
+	}
+	&__ttl{
+		text-align: center;
+	}
+	input {
+		height: 59px;
+		border: 2px solid #C0BABA;
+		box-sizing: border-box;
+	}
+	::placeholder {
+		color: #000000;
+		font-style: italic;
+		font-weight: 300;
+		font-size: 1.4rem;
+		padding-left: 30px;
+		padding-top: 24px;
+	  }
+	.form-row{
+		margin-top: 35px;
+		&>[class*=col-] {
+			padding-right: 10px;
+			padding-left: 10px;
+		}
+	}  
+	textarea{
+		height: 160px;
+		border: 2px solid #C0BABA;
+		box-sizing: border-box;
+	}
+	button{
+		margin: 44px auto 0;
+		color: #780A0A;
+		padding: 8px 20px;
+		border-color: #FFD203;
+	}
+}
