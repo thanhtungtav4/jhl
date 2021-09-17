@@ -30,22 +30,44 @@ body.offcanvas-active {
 	justify-content: center;
 	flex-direction: column;
 	padding: 0;
+	background-color: #FFFFFF;
 	@include min(768px){
 		.btn-close{
 			display: none;
 		}
 	}
+	@include sp{
+		justify-content: flex-start;
+		.btn-close{
+			margin-top: 2rem;
+		}
+	}
 }
 .m-header{
 	width: 100%;
+	.container{
+		padding-right: 0;
+		padding-left: 0;
+	}
 	&__top{
 		@include flex-jbetween;
+		@include sp{
+			flex-direction: column;
+		}
+	}
+	&__logo{
+		text-align: center;
 	}
 	&__info{
 		@include flex;
 		width: calc(100% - 445px);
 		justify-content: flex-end;
 		align-items: center;
+		@include sp{
+			width: 100%;
+			padding: 0 5px;
+			justify-content: space-between;
+		}
 		li{
 			@include flex;
 			img{
@@ -57,6 +79,17 @@ body.offcanvas-active {
 			p{
 				font-size: 1.2rem;
     			font-weight: 700;
+			}
+			@include sp{
+				&:nth-of-type(2){
+					margin-left: 0;
+				}
+				p{
+					font-size: .8rem;
+				}
+				img{
+					height: 20px;
+				}
 			}
 		}
 	}
@@ -87,10 +120,17 @@ body.offcanvas-active {
 			@include flex;
 			justify-content: space-between;
 		}
+		@include sp{
+			background-color: unset; 
+			box-shadow: unset;
+		}
 	}
 	&__menu{
 		@include flex;
 		justify-content: flex-start;
+		@include sp{
+			flex-direction: column;
+		}
 		li{
 			position: relative;
 			&::after{
@@ -118,11 +158,20 @@ body.offcanvas-active {
 				@include flex;
 				align-items: center;
 				text-decoration: none;
+				@include sp{
+					color: $color_main;
+					height: 50px;
+					padding-left: 10px;
+				}
 			}
 			&:not(:nth-child(1)){
 				a{
 					padding-left: 50px;
 					padding-right: 50px;
+					@include sp{
+						padding-left: 10px;
+						padding-right: 0;
+					}
 				}
 			}
 			

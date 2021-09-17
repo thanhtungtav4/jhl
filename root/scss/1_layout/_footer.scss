@@ -13,6 +13,9 @@ footer{
             background-color: #B50E15;
             @include flex-center;
             padding: 23px;
+            @include sp{
+                padding-top: 5px
+            }
             span{
                 @include flex-center;
             }
@@ -20,8 +23,12 @@ footer{
                 font-size: 2.4rem;
                 font-weight: 700;
                 color: #ffffff;
+                padding: 0 1rem;
                 @include min(768px){
                     margin-right: 8rem;
+                }
+                @include sp{
+                    padding: 1rem;
                 }
             }
             a{

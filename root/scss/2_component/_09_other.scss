@@ -41,12 +41,21 @@
 	text-transform: uppercase;
 	font-size: 3rem;
 	line-height: 1.36;
-	padding: 24px 0;	
+	padding: 24px 0;
+		@include tb{
+			font-size: 2rem;
+		}
+		@include sp{
+			font-size: 1.5rem;
+		}
 }
 .c-ihome{
 	z-index: 2;
 	margin-bottom: -10rem;
     position: relative;
+	@include sp{
+		margin-bottom: 0;
+	}
 	&__tag{
 		color: #ffff;
 		font-weight: 800;
@@ -121,6 +130,10 @@
     background-color: #f1f3f5;
 	position: relative;
     z-index: 1;
+	@include sp{
+		margin-top: 2rem;
+		background-position: bottom;
+	}
 	&__inner{
 		position: relative;
 		ul{
@@ -134,6 +147,10 @@
 				border-left: 5px solid #ffffff;
 				border-right: 5px solid #ffffff;
 				background-clip: content-box;
+				@include sp{
+					border-left: 2px solid #ffffff;
+					border-right: 2px solid #ffffff;
+				}
 				p{
 					color: #FFD203;
 					font-weight: bold;
@@ -144,6 +161,15 @@
 					background: rgba(12, 12, 12, 0.72);
 					height: 106px;
 					width: 100%;
+					@include tb{
+						font-size: 1.5rem;
+						padding: 15px;
+					}
+					@include sp{
+						font-size: 1.1rem;
+						padding: 5px;
+						height: auto;
+					}
 				}
 			}
 			&:nth-of-type(2){
@@ -164,6 +190,10 @@
 		max-width: 540px;
 		right: 2%;
 		top: 16%;
+		@include sp{
+			top: 1%;
+			text-align: center;
+		}
 	}
 	&__ttl{
 		font-size: 3.5rem;
@@ -898,8 +928,12 @@
 	&__ttl{
 		color: $color_main02;
 		margin-bottom: 38px;
+		@include tb{
+			margin-bottom: 20px;
+		}
 		@include sp{
 			text-align: center;
+			margin-bottom: 20px;
 		}
 	}
 	&__item{
@@ -1029,6 +1063,14 @@
 		background-size: cover;
 		background-position: center;
 		position: relative;
+		@include tb{
+			margin-top: 2.5rem;
+
+		}
+		@include sp{
+			margin-top: 2rem;
+			
+		}
 	}
 	a{
 		h3{
@@ -1052,6 +1094,9 @@
 }
 .c-help{
 	margin: 7rem auto 9rem;
+	@include sp{
+		margin: 3rem auto 5rem;
+	}
 	@include flex-center;
 	&__border{
 		border: 2px solid #B50E15;
@@ -1059,6 +1104,12 @@
 		padding: 30px 90px 50px;
 		margin: 0 15px;
 		max-width: 1110px;
+		@include tb{
+			padding: 30px 30px 50px;
+		}
+		@include sp{
+			padding: 50px 10px 50px;
+		}
 	}
 	&__ttl{
 		text-align: center;
@@ -1081,6 +1132,12 @@
 		&>[class*=col-] {
 			padding-right: 10px;
 			padding-left: 10px;
+		}
+		@include sp{
+			margin-top: 0;
+			.form-group{
+				margin-top: 25px;
+			}
 		}
 	}  
 	textarea{

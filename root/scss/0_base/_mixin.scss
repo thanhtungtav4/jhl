@@ -38,7 +38,7 @@
 	}
 }
 @mixin tb {
-	@media (min-width: #{$breaksp}) and (max-width: #{$desktop-width - 1px}) {
+	@media (min-width: #{$breakpoint1}) and (max-width: #{$desktop-width - 1px}) {
 	  @content;
 	}
   }
