@@ -23,11 +23,19 @@
 		text-align: left;
 		padding: 30px 30px 30px 200px;
 		height: 260px;
+		@include sp{
+			position: static;
+			padding: 15px;
+			height: inherit;
+		}
 	}
 	&__ttl{
 		color: #FFD203;
 		font-size: 3.6rem;
 		line-height: 1.36;
+		@include sp{
+			font-size: 2rem;
+		}
 	}
 	&__txt{
 		color: #ffffff;
@@ -35,6 +43,9 @@
 		line-height: 1.38;
 		margin-top: 10px;
 		margin-bottom: 15px;
+		@include sp{
+			font-size: 1.1rem;
+		}
 	}
 	
 }

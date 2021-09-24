@@ -44,9 +44,11 @@
 	padding: 24px 0;
 		@include tb{
 			font-size: 2rem;
+			padding: 20px 0;
 		}
 		@include sp{
 			font-size: 1.5rem;
+			padding: 15px 0;
 		}
 }
 .c-ihome{
@@ -55,6 +57,13 @@
     position: relative;
 	@include sp{
 		margin-bottom: 0;
+	}
+	&__content{
+		margin-top: 11rem;
+		margin-bottom: 3rem;
+		@include sp{
+			margin-top: 1rem;
+		}
 	}
 	&__tag{
 		color: #ffff;
@@ -133,6 +142,7 @@
 	@include sp{
 		margin-top: 2rem;
 		background-position: bottom;
+		height: auto;
 	}
 	&__inner{
 		position: relative;
@@ -168,7 +178,7 @@
 					@include sp{
 						font-size: 1.1rem;
 						padding: 5px;
-						height: auto;
+						height: 55px;
 					}
 				}
 			}
@@ -177,6 +187,10 @@
 				border-top: 10px solid #ffffff;
 				align-items: flex-end;
 				height: 217px;
+				@include sp{
+					height: auto;
+					border-top: 5px solid #ffffff;
+				}
 				li{
 					width: 50%;
 					height: 100px;
@@ -939,6 +953,9 @@
 	&__item{
 		@include flex;
 		padding: 2rem 0px;
+		picture{
+			@include flex-center;
+		}
 	}
 	&__content{
 		margin-left: 19px;
@@ -1026,6 +1043,9 @@
 		&-active {
 			z-index: 1;
 			transform: scale(0.75) translate(150px);
+			@include sp{
+				transform: scale(0.5) translate(410px);
+			}
 		}
 		&-center{
 			transform: scale(1);
@@ -1034,6 +1054,13 @@
 			&+.slick-slide {
 				z-index: 1;
 				transform: scale(0.75) translate(-150px);
+			}
+			@include sp{
+				transform: scale(0.7);
+				&+.slick-slide {
+					z-index: 1;
+					transform: scale(0.5) translate(-410px);
+				}
 			}
 		}
 		&-dots{
