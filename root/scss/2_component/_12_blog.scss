@@ -171,6 +171,12 @@
         margin-top: 4px;
         font-style: normal;
         color:black;
+        text-overflow: ellipsis;
+        line-height: 25px;
+        -webkit-line-clamp: 3;
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
     }
     &__author{
         position: absolute;
