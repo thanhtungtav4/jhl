@@ -58,38 +58,35 @@
     <nav class="d-flex d-md-none justify-content-between align-items-center navbar navbar__mobile"><a class="navbar-brand" href="#"> 
         <picture><img src="assets/images/jhl_logo.png" alt="JHL logo" height="54"></picture></a><a class="nav_menu p-3" data-trigger="navbar_main"> <i class="gg-menu"></i></a></nav><span class="screen-darken"> </span>
     <main class="l-main">
-      <div class="swiper-container swiper-banner">
-        <!-- Additional required wrapper-->
-        <div class="swiper-wrapper">
-          <!-- Slides-->
-          <div class="swiper-slide c-slide">
+      <div class="m-slider">       
+        <div class="m-slider__item">
+          <div class="m-slider__inner">
             <picture>
               <source srcset="assets/images/about_slider.avif" type="image/avif">
               <source srcset="assets/images/about_slider.webp" type="image/webp"><img src="assets/images/about_slider.jpg" type="image/jpg" alt="ĐỊNH CƯ Canada">
             </picture>
-            <div class="row position-absolute c-slide__box">
-              <div class="c-slide__inner">
-                <div class="col-12"> 
-                  <h3 class="c-slide__ttl">GIỚI THIỆU VỀ JHL</h3>
-                  <p class="c-slide__txt">Dựa trên nền tảng phát triển được xây dựng bởi mối quan hệ hợp tác nhiều năm với các hãng luật uy tín, kết hợp cùng quy trình tư vấn, xúc tiến hồ sơ chuyên nghiệp, JHL tự hào là công ty đi đầu trong lĩnh vực Du học - Du lịch & Định cư Mỹ và Canada cam kết chất lượng dịch vụ, đảm bảo uy tín hàng đầu.</p><a class="c-slide__btn btn" href="#">Xem thêm</a>
-                </div>
-              </div>
+            <div class="m-slider__content">
+              <h3 class="m-slider__ttl">ĐỊNH CƯ MỸ EB-3</h3>
+              <p class="m-slider__txt">Trở thành công dân cường quốc Mỹ theo hình thức chuyên gia hoặc lao động với công việc dài hạn, chương trình an cư "hậu di trú" uy tín, đảm bảo cho thường trú nhân gia đình những quyền lợi tốt nhất</p><a class="m-slider__btn btn" href="#">Xem thêm              </a>
             </div>
           </div>
-          <div class="swiper-slide c-slide">
+        </div>
+        <div class="m-slider__item">
+          <div class="m-slider__inner">
             <picture>
               <source srcset="assets/images/about_slider.avif" type="image/avif">
               <source srcset="assets/images/about_slider.webp" type="image/webp"><img src="assets/images/about_slider.jpg" type="image/jpg" alt="ĐỊNH CƯ Canada">
             </picture>
-            <div class="row position-absolute c-slide__box">
-              <div class="c-slide__inner">
-                <div class="col-12"> 
-                  <h3 class="c-slide__ttl">GIỚI THIỆU VỀ JHL</h3>
-                  <p class="c-slide__txt">Dựa trên nền tảng phát triển được xây dựng bởi mối quan hệ hợp tác nhiều năm với các hãng luật uy tín, kết hợp cùng quy trình tư vấn, xúc tiến hồ sơ chuyên nghiệp, JHL tự hào là công ty đi đầu trong lĩnh vực Du học - Du lịch & Định cư Mỹ và Canada cam kết chất lượng dịch vụ, đảm bảo uy tín hàng đầu.</p><a class="c-slide__btn btn" href="#">Xem thêm</a>
-                </div>
-              </div>
+            <div class="m-slider__content">
+              <h3 class="m-slider__ttl">ĐỊNH CƯ MỸ EB-3</h3>
+              <p class="m-slider__txt">Trở thành công dân cường quốc Mỹ theo hình thức chuyên gia hoặc lao động với công việc dài hạn, chương trình an cư "hậu di trú" uy tín, đảm bảo cho thường trú nhân gia đình những quyền lợi tốt nhất</p><a class="m-slider__btn btn" href="#">Xem thêm    </a>
             </div>
           </div>
+        </div>
+      </div>
+      <div class="m-call"> 
+        <div class="container">
+          <p>FOR A FREE CASE EVALUATION<strong>, CALL (+84) 887-7839 </strong></p>
         </div>
       </div>
       <div class="container container__inner padding-bottom">
@@ -350,5 +347,24 @@
     <script src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"> </script>
     <script src="assets/js/common.js"> </script>
     <script src="assets/js/fslightbox.js"> </script>
+    <script>
+      $(document).ready(function(){
+        $(".m-slider").slick({
+          autoplay:true,
+          autoplaySpeed:10000,
+          speed:600,
+          slidesToShow:1,
+          slidesToScroll:1,
+          pauseOnHover:false,
+          dots:true,
+          pauseOnDotsHover:true,
+          cssEase:'linear',
+          draggable:false,
+          nav: false,
+          prevArrow: null,
+          nextArrow: null, 
+        });
+      });
+    </script>
   </body>
 </html>

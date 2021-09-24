@@ -10,32 +10,31 @@ block vars
   -lightbox       = true
 
 block container
-  .swiper-container.swiper-banner
-    // Additional required wrapper
-    .swiper-wrapper
-      // Slides
-      .swiper-slide.c-slide
+  .m-slider        
+    .m-slider__item
+      .m-slider__inner
         picture
           source(srcset=path+'assets/images/about_slider.avif' type="image/avif")
           source(srcset=path+'assets/images/about_slider.webp' type="image/webp")
           img(src=path+'assets/images/about_slider.jpg' type="image/jpg" alt="ĐỊNH CƯ Canada")
-        .row.position-absolute.c-slide__box
-          .c-slide__inner
-            .col-12 
-              h3.c-slide__ttl GIỚI THIỆU VỀ JHL
-              p.c-slide__txt Dựa trên nền tảng phát triển được xây dựng bởi mối quan hệ hợp tác nhiều năm với các hãng luật uy tín, kết hợp cùng quy trình tư vấn, xúc tiến hồ sơ chuyên nghiệp, JHL tự hào là công ty đi đầu trong lĩnh vực Du học - Du lịch & Định cư Mỹ và Canada cam kết chất lượng dịch vụ, đảm bảo uy tín hàng đầu.
-              a.c-slide__btn.btn(href="#" ) Xem thêm
-      .swiper-slide.c-slide
+        .m-slider__content
+          h3.m-slider__ttl ĐỊNH CƯ MỸ EB-3
+          p.m-slider__txt Trở thành công dân cường quốc Mỹ theo hình thức chuyên gia hoặc lao động với công việc dài hạn, chương trình an cư "hậu di trú" uy tín, đảm bảo cho thường trú nhân gia đình những quyền lợi tốt nhất
+          a.m-slider__btn.btn(href="#" ) Xem thêm              
+    .m-slider__item
+      .m-slider__inner
         picture
           source(srcset=path+'assets/images/about_slider.avif' type="image/avif")
           source(srcset=path+'assets/images/about_slider.webp' type="image/webp")
           img(src=path+'assets/images/about_slider.jpg' type="image/jpg" alt="ĐỊNH CƯ Canada")
-        .row.position-absolute.c-slide__box
-          .c-slide__inner
-            .col-12 
-              h3.c-slide__ttl GIỚI THIỆU VỀ JHL
-              p.c-slide__txt Dựa trên nền tảng phát triển được xây dựng bởi mối quan hệ hợp tác nhiều năm với các hãng luật uy tín, kết hợp cùng quy trình tư vấn, xúc tiến hồ sơ chuyên nghiệp, JHL tự hào là công ty đi đầu trong lĩnh vực Du học - Du lịch & Định cư Mỹ và Canada cam kết chất lượng dịch vụ, đảm bảo uy tín hàng đầu.
-              a.c-slide__btn.btn(href="#" ) Xem thêm
+        .m-slider__content
+          h3.m-slider__ttl ĐỊNH CƯ MỸ EB-3
+          p.m-slider__txt Trở thành công dân cường quốc Mỹ theo hình thức chuyên gia hoặc lao động với công việc dài hạn, chương trình an cư "hậu di trú" uy tín, đảm bảo cho thường trú nhân gia đình những quyền lợi tốt nhất
+          a.m-slider__btn.btn(href="#" ) Xem thêm    
+  .m-call 
+    .container
+      p FOR A FREE CASE EVALUATION
+        strong , CALL (+84) 887-7839 
   .container.container__inner.padding-bottom
     section.c-intro.row.mt-5.align-items-center
       .col-12.mt-4.mb-5.padding-bottom
@@ -221,5 +220,23 @@ block container
         p.c-admin__sub President/Founder of JHL
         p.c-admin__txt “JHL phục vụ khách hàng với tâm thế của người bạn đồng hành tuyệt vời, cùng đi xuyên suốt quá trình di trú, linh hoạt và chuyên nghiệp trong xử lý vấn đề để mang lại những hiệu quả rõ rệt.”
 block script
+  script.
+    $(document).ready(function(){
+      $(".m-slider").slick({
+        autoplay:true,
+        autoplaySpeed:10000,
+        speed:600,
+        slidesToShow:1,
+        slidesToScroll:1,
+        pauseOnHover:false,
+        dots:true,
+        pauseOnDotsHover:true,
+        cssEase:'linear',
+        draggable:false,
+        nav: false,
+        prevArrow: null,
+        nextArrow: null, 
+      });
+    });
 
    
