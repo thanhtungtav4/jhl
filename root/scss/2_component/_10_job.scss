@@ -209,33 +209,12 @@
 	background-position: center;
 	&__ttl{
 		font-weight: bold;
-		font-size: 3.6rem;
+		font-size: 2.4rem;
 		line-height: 1.375;
 		text-align: center;
 		padding: 9.2rem 0;
 		color: $color_main02;
 		position: relative;
-		&::after, &::before{
-			background-image:url(../../assets/images/tag02.png) ;
-			width: 6.5rem;
-			height: 7.9rem;
-			background-size: 100%;
-			background-repeat: no-repeat;
-			background-position: center;
-			content: '';
-			position: absolute;
-			@include sp{
-				width: 4.5rem;
-				height: 5.9rem;
-			}
-		}
-		&::before{
-			margin: -2% -1%;
-		}
-		&::after{
-			transform: rotate(180deg);
-			margin: -3% 0%;
-		}
 		@include sp{
 			font-size: 2.6rem;
 		}

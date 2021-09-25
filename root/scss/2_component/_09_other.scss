@@ -324,6 +324,9 @@
 }
 .c-trust{
 	margin: 3rem 0 4.7rem;
+	&__item{
+		padding: 0 25px;
+	}
 	&__img{
 		width: 87px;
 		height: 87px;
@@ -342,8 +345,8 @@
 		z-index: 0;
 		width: 82px;
 		height: 75px;
-		left: 0;
-		top: 10px;
+		left: -20px;
+    	top: 30px;
 		@include max(768px){
 			width: 62px;
 			height: 55px;
