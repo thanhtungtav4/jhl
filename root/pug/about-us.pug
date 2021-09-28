@@ -44,13 +44,13 @@ block container
         h2.c-intro__ttl.ttl TẦM NHÌN & SỨ MỆNH JHL
         p.c-intro__txt JHL là công ty đi đầu về các dịch vụ tư vấn du học, du lịch & Định cư Mỹ, Canada tại Việt Nam. Với hơn 3+ năm phát triển cùng đội ngũ nhân viên giàu kinh nghiệm, JHL đã triển khai nhiều dự án định cư Mỹ EB-3, Định cư Canada diện lao động, tư vấn du lịch, du học uy tín và hiện thực hóa ước mơ cho nhiều khách hàng. Cũng chính vì vậy, JHL đã dần trở thành thương hiệu uy tín hàng đầu với tỷ lệ thành công xin visa Mỹ & Canada cao và nhanh chóng. 
         a.c-intro__btn.btn.mt-3(href="#" ) Xem thêm
-      .col-md-6
+      .col-md-6.text-center
         picture
           source(srcset=path+'assets/images/about01.avif' type="image/avif")
           source(srcset=path+'assets/images/about01.webp' type="image/webp") 
           img(src=path+'assets/images/about01.jpg' type="image/jpg" alt="TẦM NHÌN & SỨ MỆNH JHL")
       .row.mt-5.padding-top
-        .col-md-6
+        .col-md-6.text-center
           picture
             source(srcset=path+'assets/images/about02.avif' type="image/avif")
             source(srcset=path+'assets/images/about02.webp' type="image/webp") 
@@ -97,43 +97,13 @@ block container
             img(src=path+'assets/images/img_user.jpg', alt="")
           p Tư vấn du lịch Mỹ & Canada
         .col-12.mx-auto.text-center.mt-5
-          a.c-slide__btn.btn(href="#" ) Xem thêm                               
-  section.c-why
-    .container.container__why
-      .row
-        .col-12
-          h2.c-why__ttl.ttl.text-center VÌ SAO JHL ĐƯỢC KHÁCH HÀNG
-            | <br>TIN TƯỞNG LỰA CHỌN
-        .col-md-3.col-6
-          p.c-why__num 2000+
-          picture
-            source(srcset=path+'assets/images/icon_note.webp' type="image/webp")
-            img(src=path+'assets/images/icon_note.png' type="image/png" alt="Visa Đầu Tư Định Cư EB3 đã và đang được thụ lý")
-          p.c-why__txt Visa Đầu Tư Định Cư EB3 đã và đang được thụ lý
-        .col-md-3.col-6  
-          p.c-why__num 600+
-          picture
-            source(srcset=path+'assets/images/icon_note.webp'  type="image/webp")
-            img(src=path+'assets/images/icon__book.png' type="image/png" alt="Hồ sơ di trú thành công nộp vào Sở di trú Mỹ")
-          p.c-why__txt Hồ sơ di trú thành công nộp vào Sở di trú Mỹ
-        .col-md-3.col-6  
-          p.c-why__num 1000+
-          picture
-            source(srcset=path+'assets/images/icon__partner.webp' type="image/webp")
-            img(src=path+'assets/images/icon__partner.png' type="image/png" alt="Thường trú nhân và gia đình hiện thực hóa ước mơ định cư cùng JHL")
-          p.c-why__txt Thường trú nhân và gia đình hiện thực hóa ước mơ định cư cùng JHL
-        .col-md-3.col-6  
-          p.c-why__num 6 tháng
-          picture
-            source(srcset=path+'assets/images/icon__time.webp' type="image/webp")
-            img(src=path+'assets/images/icon__time.png' type="image/png" alt="Thời gian chấp nhận hồ sơ EB-3 kỷ lục") 
-          p.c-why__txt  Thời gian chấp nhận hồ sơ EB-3 kỷ lục     
+          a.c-slide__btn.btn(href="#" ) Tìm hiểu thêm                           
   section.c-jhl.padding-top
     .container.container__inner
       .row
         .col-10.mx-auto.text-center.mb-5
-          h2.ttl.c-trust__ttl ĐÁNH GIÁ CỦA KHÁCH HÀNG JHL  
-          p Với đội ngũ tư vấn hội nhập và an cư & Cái tâm - cái tầm của đội ngũ trợ lý pháp lý tại JHL, chúng tôi cam kết luôn cung cấp dịch vụ đáng tin cậy, chuyên nghiệp nhất cho khách hàng.  
+          h2.ttl.c-trust__ttl ĐỘI NGŨ CHUYÊN GIA TẠI JHL 
+          p Với đội ngũ tư vấn hội nhập và an cư & Cái tâm - cái tầm của đội ngũ trợ lý pháp lý tại JHL, chúng tôi cam kết luôn cung cấp dịch vụ đáng tin cậy, chuyên nghiệp nhất cho khách hàng.
         .col-md-3.col-6 
           img(src=path+'assets/images/ceo__01.jpg', alt="")
           p.c-jhl__ttl Mr. Johnny Le
@@ -161,26 +131,22 @@ block container
   section.c-images
     .container.container__inner.padding-bottom 
       .c-images__inner 
-        #gallery.gallery
-          // Grid column
-          a.mb-3.pics.animation.all(data-fslightbox href=path+'assets/images/img__box01.jpg')
-            img.img-fluid(src=path+'assets/images/img__box01.jpg' alt='Card image cap')
-          a.mb-3.pics.animation.all(data-fslightbox href=path+'assets/images/img_winner.jpg')
-            img.img-fluid(src=path+'assets/images/img_winner.jpg' alt='Card image cap')
-          a.mb-3.pics.animation.all(data-fslightbox href=path+'assets/images/diverse-workers.jpg')
-            img.img-fluid(src=path+'assets/images/diverse-workers.jpg' alt='Card image cap')
-          a.mb-3.pics.animation.all(data-fslightbox href=path+'assets/images/img__box04.jpg')
-            img.img-fluid(src=path+'assets/images/img__box04.jpg' alt='Card image cap')
-          a.mb-3.pics.animation.all(data-fslightbox href=path+'assets/images/img__box05.jpg')
-            img.img-fluid(src=path+'assets/images/img__box05.jpg' alt='Card image cap')
-          a.mb-3.pics.animation.all(data-fslightbox href=path+'assets/images/img__box06.jpg')
-            img.img-fluid(src=path+'assets/images/img__box06.jpg' alt='Card image cap')
-          a.mb-3.pics.animation.all(data-fslightbox href=path+'assets/images/img__box01.jpg')
-            img.img-fluid(src=path+'assets/images/img__box01.jpg' alt='Card image cap')         
-        .col-12.mt-4
-          a.c-jintro__link.m-link.justify-content-center(href="#" )
-           |  Ứng tuyển vào JHL
-           span.gg-play-button
+        a.c-images__item.animation.all(data-fslightbox href='https://picsum.photos/672/369')
+          img.img-fluid(src='https://picsum.photos/672/369?random=6' alt='Card image cap')
+        a.c-images__item.animation.all(data-fslightbox href='https://picsum.photos/275/230')
+          img.img-fluid(src='https://picsum.photos/300/230?random=5' alt='Card image cap')
+        a.c-images__item.animation.all(data-fslightbox href='https://picsum.photos/275/652')
+          img.img-fluid(src='https://picsum.photos/306/662?random=4' alt='Card image cap')
+        a.c-images__item.animation.all(data-fslightbox href='https://picsum.photos/300/305')
+          img.img-fluid(src='https://picsum.photos/300/305?random=1' alt='Card image cap')
+        a.c-images__item.animation.all(data-fslightbox href='https://picsum.photos/275/447')
+          img.img-fluid(src='https://picsum.photos/306/420?random=2' alt='Card image cap')
+        a.c-images__item.animation.all(data-fslightbox href='https://picsum.photos/672/328?random=3')
+          img.img-fluid(src='https://picsum.photos/672/348?random=3' alt='Card image cap')     
+      .col-12.mt-4
+        a.c-jintro__link.m-link.justify-content-center(href="#" )
+          |  Ứng tuyển vào JHL
+          span.gg-play-button
   section.c-trust
     .container
       .row
@@ -256,6 +222,20 @@ block script
         nav: false,
         prevArrow: null,
         nextArrow: null, 
+        responsive: [
+        {
+          breakpoint: 992,
+          settings: {
+            slidesToShow: 2,
+          },
+        },
+        {
+          breakpoint: 768,
+          settings: {
+            slidesToShow: 1,
+          },
+        },
+      ],
       });
     });
 
