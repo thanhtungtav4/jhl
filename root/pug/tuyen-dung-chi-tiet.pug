@@ -1,0 +1,121 @@
+extends _layout/default
+
+block vars
+  -title        = 'Tuyển dụng Chi Tiết - JHL Home'
+  -description  = ''
+  -keywords     = ''
+  -pageID       = 'top'
+  -path         = ''
+  -slider       = false
+
+block container
+  .container.container__inner
+    section.c-jobDetail.py-3 
+      .row 
+        .col-md-6
+          img(src=path+'assets/images/job__detail.jpg', alt="")
+        .col-md-6
+          h1.c-jobDetail__ttl.ttl Chuyên viên xử lý hồ sơ
+          .row
+            .col-6  
+              p
+                strong Hạn chót nộp CV: 
+                |04/05/2021
+            .col-6  
+              p
+                strong Vị trí: 
+                |Full time/ part-time/ freelancer
+          .row
+            .col-6  
+              p
+                strong Lương: 
+                |Thương lượng
+            .col-6  
+              p
+                strong Số lượng tuyển: 
+                |3 
+          .row.c-jobDetail_how  
+            .col-12
+              h4.ttl Cách thức ứng tuyển
+              p Để ứng tuyển vào vị trí này, vui lòng nộp CV vào email haowater111@gmail.com
+
+      .row 
+          .col-12 
+            h2.c-jobDetail_h2  MÔ TẢ CÔNG VIỆC
+            ul  
+              li Thu thập thông tin, hoàn thành các mẫu đơn, hướng dẫn thủ tục hồ sơ visa Canada và các nước thuộc chiến lược phát triển của công ty
+              li Dịch thuật hồ sơ khách hàng trong quá trình xử lý hồ sơ visa
+              li Tạo và duy trì cơ sở dữ liệu theo qui định của công ty
+              li Phối hợp với Nhân viên Tư vấn để hoàn thành hồ sơ cho khách hàng
+              li Liên lạc với các cơ quan, tổ chức có liên quan để hoàn thành thủ tục hồ sơ Visa Canada và các nước thuộc chiến lược phát triển của công ty
+              li Chủ động nghiên cứu thông tin về nhập cư và thông tin / cập nhật chung, thay đổi trong quy định nhập cư của Canada, các nước thuộc chiến lược phát triển của công ty
+              li Các công việc hành chính tổng hợp khác được giao từ Quản lý
+            h2.c-jobDetail_h2  YÊU CẦU ỨNG VIÊN
+            ul  
+              li Ứng viên tốt nghiệp từ đại học trở lên, có kinh nghiệm là một lợi thế.
+              li Ưu tiên ứng viên trong độ tuổi 24-30 tuổi, có ngoại hình
+              li Có mong muốn gắn bó lâu dài với công ty
+              li Kỹ năng giao tiếp, chăm sóc khách hàng tốt
+              li Chịu được áp lực công việc
+              li Chăm chỉ và có trách nhiệm
+              li Luôn hoàn thành tốt công việc được giao
+              li Trình độ vi tính: Thành thạo Word, Excel, Outlook
+              li Năng động. khả năng giao tiếp tốt. Khả năng nắm bắt tâm lý thuyết phục khách hàng tốt. Âm giọng rõ, nhẹ nhàng.
+            h2.c-jobDetail_h2.text-center  QUYỀN LỢI ĐƯỢC HƯỞNG
+            ul
+              li Lương: lương cơ bản 10 - 15 triệu
+              li Được đào tạo thường xuyên, làm việc trong môi trường chuyên nghiệp, nhiều cơ hội thăng tiến
+              li Được trang bị máy tính xách tay
+              li Được tham gia tất cả các chế độ BHXH, BHYT, BHTN theo quy định nhà nước
+              li Cơ hội thăng tiến và phát triển
+            
+
+    section.c-news.is_blog.py-5
+      .container
+        .row 
+          .col-12
+              h2.c-jobDetail_h2.text-center  CÁC VỊ TRÍ TUYỂN DỤNG KHÁC
+        .row.row-eq-height
+          .col-md-4.col-6.mt-5
+            .card.shadow-sm
+              img(src=path+'assets/images/img_news.jpg' type="image/jpg" alt="news")
+              .card-body.p-md-4.p-2
+                h4.c-news__name.mb-3 Chuyên viên khách hàng cá nhân
+                .card-text.c-news__txt
+                  ul.c-jobDetail_listchild
+                    li li Mức lương: 10-12tr
+                    li Hạn chót nộp CV: 10/05/2021
+                    li Vị trí: Full-time
+                    li Số lượng: 2
+                .d-flex.justify-content-center.align-items-center.mt-auto
+                  a.c-news__btn.btn(href="#" ) Xem thêm
+          .col-md-4.col-6.mt-5
+            .card.shadow-sm
+              img(src=path+'assets/images/img_news.jpg' type="image/jpg" alt="news")
+              .card-body.p-md-4.p-2
+                h4.c-news__name.mb-3 Chuyên viên khách hàng doanh nghiệp
+                .card-text.c-news__txt
+                  ul.c-jobDetail_listchild
+                    li li Mức lương: 10-12tr
+                    li Hạn chót nộp CV: 10/05/2021
+                    li Vị trí: Full-time
+                    li Số lượng: 2
+                .d-flex.justify-content-center.align-items-center.mt-auto
+                  a.c-news__btn.btn(href="#" ) Xem thêm
+          .col-md-4.col-6.mt-5.mx-auto
+            .card.shadow-sm
+              img(src=path+'assets/images/img_news.jpg' type="image/jpg" alt="news")
+              .card-body.p-md-4.p-2
+                h4.c-news__name.mb-3 Chuyên viên xử lý hồ sơ
+                .card-text.c-news__txt
+                  ul.c-jobDetail_listchild
+                    li li Mức lương: 10-12tr
+                    li Hạn chót nộp CV: 10/05/2021
+                    li Vị trí: Full-time
+                    li Số lượng: 2
+                .d-flex.justify-content-center.align-items-center.mt-auto
+                  a.c-news__btn.btn(href="#" ) Xem thêm                                                                                                    
+
+block script
+ 
+   

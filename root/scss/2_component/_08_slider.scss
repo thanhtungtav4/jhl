@@ -1,6 +1,25 @@
 /*------------------------------------------------------------
 	Slider
 ------------------------------------------------------------*/
+.c-wbanner{
+	&__inder{
+		width: 100%;
+		display: block;
+		overflow: hidden;
+		position: relative;
+	}
+	&__item{
+		img{
+			width: 100%;
+			position: relative;
+		}
+	}
+	&__content{
+		position: absolute;
+		top: 25%;
+		bottom: 30%;
+	}
+}
 .m-slider{
 	&__inder{
 		width: 100%;
