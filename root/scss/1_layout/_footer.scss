@@ -44,6 +44,9 @@ footer{
                 }
                 span {
                     margin-right: 15px;
+                    &:first-child{
+                        margin-right: 0;
+                    }
                 }
             }
         }

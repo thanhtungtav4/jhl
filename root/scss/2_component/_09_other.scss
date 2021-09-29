@@ -640,6 +640,10 @@
 		grid-template-columns: 1fr 1fr 1fr;
 		grid-template-rows: 230px 88px 305px 328px;
 		grid-gap: 20px;
+		@include sp{
+			grid-template-rows: 73px 25px 94px 139px;
+			grid-gap: 10px;
+		}
 	}	
 	&__item{
 		&:first-child{
@@ -690,8 +694,8 @@
 .c-event{
 	color: $color2;
 	&__count{
-		padding: 20px 0;
-		background-color: $color_main;
+		padding: 17px 0;
+		background-color: #4F4F4F;
 	}
 	&__ttlc{
 		font-weight: 800;
@@ -832,7 +836,6 @@
 		li{
 			width: calc(50% - 20px);
 			@include flex-jbetween;
-			
 			@include sp{
 				width: 100%;
 				margin-bottom: 2rem;
@@ -841,7 +844,7 @@
 	}
 	&__content{
 		width: calc(100% - 198px);
-		padding: 15px 20px 27px 31px;
+		padding: 15px 20px 20px 31px;
 		@include sp{
 			width: calc(100% - 100px);
 			padding: 0 15px;
