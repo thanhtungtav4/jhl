@@ -462,7 +462,7 @@
 .c-submit{
 	margin-bottom: 4.6rem;
 	&__inner{
-		padding: 0 4rem;
+		padding: 0 2rem;
 	}
 	&__shadow{
 		box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
@@ -477,7 +477,6 @@
 		border-bottom: 1px solid #C0BABA;
 		input{
 			border: 0;
-			height: 4.6rem;
 			&::placeholder{
 				color: #E0E0E0;
 				font-size: 1.4rem;

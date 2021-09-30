@@ -6,9 +6,11 @@ block vars
   -keywords     = ''
   -pageID       = 'top'
   -path         = ''
-  -slider       = false
+  -slider       = true
 
 block container
+  .c-wbanner
+    
   .container.container__inner                          
     section.c-news.is_blog.py-5.p-sm-3
       .container
@@ -85,6 +87,24 @@ block container
                 li.page-item
                   a.page-link(href='#') Next
 
+    section.c-review
+      h2.c-review__ttl.ttl.text-center ĐÁNH GIÁ TỪ CÁC <br> KHÁCH HÀNG JHL KHÁC
+      .row.c-review__inner.py-5.mt-5.mb-5 
+        .c-review__item 
+          .c-review__img
+            img(src=path+'assets/images/img_user.jpg', alt="")
+          .c-review__content 
+            h4.c-review__name Anh Tr.Th.T 
+            p.c-review__namesub Định cư EB-3
+            p.c-review__txt Sự nhiệt tình của JHL có thể thấy trong từng công việc, JHL đã cùng tôi suốt quá trình từ Việt Nam qua Mỹ mà rất chu đáo, rất tận tình. Cám ơn JHL.
+        .c-review__item 
+          .c-review__img
+            img(src=path+'assets/images/img_user.jpg', alt="")
+          .c-review__content 
+            h4.c-review__name Anh Tr.Th.T 
+            p.c-review__namesub Định cư EB-34
+            p.c-review__txt Sự nhiệt tình của JHL có thể thấy trong từng công việc, JHL đã cùng tôi suốt quá trình từ Việt Nam qua Mỹ mà rất chu đáo, rất tận tình. Cám ơn JHL.
+
     section.c-submit.py-5
       .container.container__inner
         .row.c-submit__shadow
@@ -103,5 +123,22 @@ block container
               button.btn.mt-4.d-block.mx-auto(type='submit') Đăng ký                
 
 block script
-
-   
+  script.
+    $(document).ready(function(){
+        $(".c-review__inner").slick({
+        autoplay:true,
+        autoplaySpeed:10000,
+        speed:600,
+        infinite: true,
+        slidesToShow: 1,
+        slidesToScroll:1,
+        pauseOnHover:false,
+        dots:false,
+        pauseOnDotsHover:true,
+        cssEase:'linear',
+        draggable:false,
+        nav: false,
+        prevArrow: null,
+        nextArrow: null, 
+      });
+    });
