@@ -227,6 +227,11 @@
     }
 }       
 .c-review{
+    .slick-initialized{
+        .slick-slide {
+            display: flex;
+        }
+    }
     &__inner{
         width: 767px;
         margin: 3rem auto;
