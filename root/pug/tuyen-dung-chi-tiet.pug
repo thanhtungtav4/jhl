@@ -11,10 +11,10 @@ block vars
 block container
   .container.container__inner
     section.c-jobDetail.py-3 
-      .row 
+      .row.align-items-center
         .col-md-6
           img(src=path+'assets/images/job__detail.jpg', alt="")
-        .col-md-6
+        .col-md-6.c-jobDetail__inner.justify-content-center
           h1.c-jobDetail__ttl.ttl Chuyên viên xử lý hồ sơ
           .row
             .col-6  
@@ -68,6 +68,9 @@ block container
               li Được trang bị máy tính xách tay
               li Được tham gia tất cả các chế độ BHXH, BHYT, BHTN theo quy định nhà nước
               li Cơ hội thăng tiến và phát triển
+            p Mọi thông tin liên quan về vị trí tuyển dụng, vui lòng gửi thắc mắc hoặc CV ứng tuyển vào email 
+              |
+              a(href="#") haowater111@gmail.com   
             
 
     section.c-news.is_blog.py-5
@@ -76,7 +79,7 @@ block container
           .col-12
               h2.c-jobDetail_h2.text-center  CÁC VỊ TRÍ TUYỂN DỤNG KHÁC
         .row.row-eq-height
-          .col-md-4.col-6.mt-5
+          .col-md-4.col-12.mt-5
             .card.shadow-sm
               img(src=path+'assets/images/img_news.jpg' type="image/jpg" alt="news")
               .card-body.p-md-4.p-2
@@ -89,7 +92,7 @@ block container
                     li Số lượng: 2
                 .d-flex.justify-content-center.align-items-center.mt-auto
                   a.c-news__btn.btn(href="#" ) Xem thêm
-          .col-md-4.col-6.mt-5
+          .col-md-4.col-12.mt-5
             .card.shadow-sm
               img(src=path+'assets/images/img_news.jpg' type="image/jpg" alt="news")
               .card-body.p-md-4.p-2
@@ -102,7 +105,7 @@ block container
                     li Số lượng: 2
                 .d-flex.justify-content-center.align-items-center.mt-auto
                   a.c-news__btn.btn(href="#" ) Xem thêm
-          .col-md-4.col-6.mt-5.mx-auto
+          .col-md-4.col-12.mt-5.mx-auto
             .card.shadow-sm
               img(src=path+'assets/images/img_news.jpg' type="image/jpg" alt="news")
               .card-body.p-md-4.p-2
