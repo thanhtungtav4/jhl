@@ -420,3 +420,12 @@
         font-weight: 600;
     }
 }
+.ttl02{
+	@include NunitoSerif;
+	color: #AAAAAA;
+    font-weight: normal;
+}
+.ttl03{
+	@include NunitoSerif;
+    font-weight: normal;
+}

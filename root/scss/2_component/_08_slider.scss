@@ -81,6 +81,8 @@
 		color: #FFD203;
 		font-size: 3.6rem;
 		line-height: 1.36;
+		@include NunitoSerif;
+		font-weight: normal;
 		@include sp{
 			font-size: 2rem;
 		}
