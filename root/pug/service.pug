@@ -19,7 +19,7 @@ block container
     .container.container__inner
       .row
         .col-12.padding-top  
-          h2.c-service__ttl.ttl.mb-5.text-center.ttl03 DỊCH VỤ JHL ĐỒNG HÀNH CÙNG BẠN 
+          h2.c-service__ttl.ttl.mb-5.text-center.ttl03.hex01 DỊCH VỤ JHL ĐỒNG HÀNH CÙNG BẠN 
         .col-md-3.col-6
           .c-service__img 
             img(src=path+'assets/images/img_user.jpg', alt="Định cư Mỹ diện làm việc - EB3")
@@ -42,7 +42,7 @@ block container
     .container.container__inner.tab__inner
      .row 
       .col-12 
-        h2.ttl.text-center.ttl03 QUY TRÌNH HỒ SƠ XIN VISA TẠI JHL
+        h2.ttl.text-center.ttl03.hex01 QUY TRÌNH HỒ SƠ XIN VISA TẠI JHL
      .tab-frame
       .c-procedure__nav
         input#tab1(type='radio' checked='' name='tab')
@@ -57,7 +57,7 @@ block container
      .container
       .row 
         .col-md-8.mx-auto.col-12 
-          h2.ttl.c-winner__ttl.text-center.ttl03 MỘT SỐ CÂU CHUYỆN 
+          h2.ttl.c-winner__ttl.text-center.ttl03.hex01 MỘT SỐ CÂU CHUYỆN 
             | <br> THÀNH CÔNG CỦA KHÁCH HÀNG
       .row.mt-5
         .col-md-6.col-12 
@@ -108,7 +108,7 @@ block container
     .container.container__why
       .row
         .col-12   
-          h2.ttl.c-user__ttl TẠI SAO NÊN SỬ DỤNG DỊCH VỤ CỦA JHL?
+          h2.ttl.c-user__ttl.hex01 TẠI SAO NÊN SỬ DỤNG DỊCH VỤ CỦA JHL?
       .row.mt-5 
         .col-md-6.col-12 
           ul.c-user__list 
@@ -126,7 +126,7 @@ block container
     .container
       .row
         .col-10.mx-auto.text-center.mb-5
-          h2.ttl.c-trust__ttl ĐÁNH GIÁ CỦA KHÁCH HÀNG JHL     
+          h2.ttl.c-trust__ttl.hex01 ĐÁNH GIÁ CỦA KHÁCH HÀNG JHL     
         .customer-swiper.col-12
           .trust__item.text-center
             img.c-trust__img(src=path+'assets/images/customer_03.jpg' type="image/jpg")
@@ -156,6 +156,21 @@ block container
               p.c-trust__name Nguyễn Thanh Toàn 
               p.c-trust__local Định cư EB-3
               p.c-trust__txt Cả gia đình tôi đã đến Mỹ được hơn 1 tháng mà tôi vẫn thấy lâng lâng vì vui sướng. Tôi có việc làm ngay khi đến đây và con tôi được đi học miễn phí. Các thủ tục mướn nhà, đăng ký việc làm, hòa nhập cộng đồng... đều được JHL quan tâm nhiệt tình. Thật sự cảm ơn JHL rất nhiều vì đã hỗ trợ gia đình tôi chu đáo.     
+          .trust__item.text-center
+            img.c-trust__img(src=path+'assets/images/customer_03.jpg' type="image/jpg")
+            .c-trust__content.position-relative
+              img.c-trust__tag.position-absolute(src=path+'assets/images/tag.png'  type="image/png")
+              p.c-trust__name Nguyễn Thanh Toàn 
+              p.c-trust__local Định cư EB-3
+              p.c-trust__txt Cả gia đình tôi đã đến Mỹ được hơn 1 tháng mà tôi vẫn thấy lâng lâng vì vui sướng. Tôi có việc làm ngay khi đến đây và con tôi được đi học miễn phí. Các thủ tục mướn nhà, đăng ký việc làm, hòa nhập cộng đồng... đều được JHL quan tâm nhiệt tình. Thật sự cảm ơn JHL rất nhiều vì đã hỗ trợ gia đình tôi chu đáo.     
+          .trust__item.text-center
+            img.c-trust__img(src=path+'assets/images/customer_03.jpg' type="image/jpg")
+            .c-trust__content.position-relative
+              img.c-trust__tag.position-absolute(src=path+'assets/images/tag.png'  type="image/png")
+              p.c-trust__name Nguyễn Thanh Toàn 
+              p.c-trust__local Định cư EB-3
+              p.c-trust__txt Cả gia đình tôi đã đến Mỹ được hơn 1 tháng mà tôi vẫn thấy lâng lâng vì vui sướng. Tôi có việc làm ngay khi đến đây và con tôi được đi học miễn phí. Các thủ tục mướn nhà, đăng ký việc làm, hòa nhập cộng đồng... đều được JHL quan tâm nhiệt tình. Thật sự cảm ơn JHL rất nhiều vì đã hỗ trợ gia đình tôi chu đáo.     
+              
      
   
 block script
@@ -167,7 +182,7 @@ block script
           slidesToShow:3,
           slidesToScroll:1,
           pauseOnHover:false,
-          dots:false,
+          dots:true,
           pauseOnDotsHover:true,
           cssEase:'linear',
           draggable:false,

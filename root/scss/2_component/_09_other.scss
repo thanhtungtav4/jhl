@@ -1032,6 +1032,7 @@
 			margin: 3rem auto 5rem;
 			align-items: center;
 			justify-content: center;
+			padding: 4rem 0;
 		}
 	&__avt{
 		width: 87px;
@@ -1209,5 +1210,26 @@
 		color: #780A0A;
 		padding: 8px 20px;
 		border-color: #FFD203;
+	}
+}
+.hex01{
+	color: #B50E15;
+}
+.customer-swiper{
+	.slick-dots{
+		bottom: 0px;
+		
+		li{
+			button{
+				background-color: #FFFA2D;
+				width: 1.2rem;
+				height: 1.2rem;
+			}
+			&.slick-active{
+				button{
+					background-color: #780A0A;
+				}
+			}
+		}
 	}
 }
