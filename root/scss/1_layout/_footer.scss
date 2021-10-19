@@ -84,6 +84,11 @@ footer{
             line-height: 1.5;
             position: relative;
             z-index: 2;
+            @include min(992px){
+                display: flex;
+                align-items: end;
+                height: 44px;
+            }
             &::before{
                 content: '';
                 position: absolute;
@@ -93,6 +98,9 @@ footer{
                 height: 23px;
                 background-color: #FFFA2D;
                 z-index: 1;
+                @include min(992px){
+                    top: 15px;
+                }
             }
             span{
                 position: relative;

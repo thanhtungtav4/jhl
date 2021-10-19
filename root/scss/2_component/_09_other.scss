@@ -133,7 +133,7 @@
 .m-interest{
 	background-image: url(../../assets/images/bg__interest.jpg);
     background-position: left;
-    height: 800px;
+    height: 794px;
     background-size: contain;
     background-repeat: no-repeat;
     background-color: #f1f3f5;
@@ -166,10 +166,10 @@
 					font-weight: bold;
 					font-size: 1.8rem;
 					line-height: 1.38;
-					padding: 28px 29px 0;
+					padding: 13px 25px;
 					text-align: left;
 					background: rgba(12, 12, 12, 0.72);
-					height: 106px;
+					height: 70px;
 					width: 100%;
 					@include tb{
 						font-size: 1.5rem;
@@ -193,7 +193,7 @@
 				}
 				li{
 					width: 50%;
-					height: 100px;
+					height: 100%;
 				}
 			}
 		}
@@ -951,7 +951,7 @@
 	}
 }
 .c-whome{
-	margin-top: 12px;
+	margin-top: 2rem;
 	background-color: #656565;
 	background-image: url(../../assets/images/bg_whome.jpg);
 	background-repeat: no-repeat;

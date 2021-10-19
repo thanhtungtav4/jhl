@@ -112,7 +112,7 @@ body.offcanvas-active {
 		}
 	}
 	&__bottom{
-		height: 80px;
+		height: 60px;
 		align-items: center;
 		background-color: #B50E15; 
 		box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
@@ -153,8 +153,8 @@ body.offcanvas-active {
 				color: #FFFFFF;
 				font-size: 1.6rem;
 				line-height: 1.375;
-				padding-right: 92px;
-				height: 80px;
+				padding-right: 35px;
+				height: 60px;
 				@include flex;
 				align-items: center;
 				text-decoration: none;
@@ -163,14 +163,22 @@ body.offcanvas-active {
 					height: 50px;
 					padding-left: 10px;
 				}
+				&:hover{
+					color: $color_main02;
+				}
 			}
 			&:not(:nth-child(1)){
 				a{
-					padding-left: 50px;
-					padding-right: 50px;
+					padding-left: 35px;
+					padding-right: 35px;
+					color: white;
 					@include sp{
 						padding-left: 10px;
 						padding-right: 0;
+						color: $color_main;
+					}
+					&:hover{
+						color: $color_main02;
 					}
 				}
 			}
