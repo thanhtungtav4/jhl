@@ -242,3 +242,23 @@ body.offcanvas-active {
 	}
 }
 
+.dropdown{
+	&-menu{
+		background-color: #e2edf1;
+		width: 100%;
+		li{
+			transition: ease-out 0.4;
+			a{
+				padding: 5px !important;
+				color: black !important;
+				font-size: 1.3rem;
+				height: auto;
+			}
+			&:hover{
+				a{
+					color: $color_main !important;
+				}
+			}
+		}
+	}
+}

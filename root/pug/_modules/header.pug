@@ -28,14 +28,32 @@ nav#navbar_main.mobile-offcanvas.navbar.navbar-expand-md.pt-0.pb-0
             a(href=path+'/') Trang chủ
           li
             a(href=path+'service.html') Định cư quốc tế
-          li
-            a(href=path+'service.html') Định cư quốc tế 
-          li
-            a(href=path+'about-us.html')  Giới thiệu 
-          li
-            a Tin tức & sự kiện   
+          li.dropdown
+            a(href='#')
+              | Giới thiệu  
+              svg(width='15' height='15' viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg')
+                path(d='M10.5858 6.34317L12 4.92896L19.0711 12L12 19.0711L10.5858 17.6569L16.2427 12L10.5858 6.34317Z' fill='currentColor')
+ 
+            ul.dropdown-menu
+              li
+                a(href='#') Về HJL
+              li
+                a(href='#') Câu chuyện thành công
+              li
+                a(href='#') Tuyển dụng            
+          li.dropdown
+            a(href='#')
+              | Tin tức & sự kiện 
+              svg(width='15' height='15' viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg')
+                path(d='M10.5858 6.34317L12 4.92896L19.0711 12L12 19.0711L10.5858 17.6569L16.2427 12L10.5858 6.34317Z' fill='currentColor')
+            ul.dropdown-menu
+              li
+                a(href='#') Tin tức
+              li
+                a(href='#') Sự kiện             
           li
             a.nav-link(href='/tuyen-dung.html')  Liên hệ
+
         ul.m-header__mess 
           li 
             a(href) 

@@ -45,13 +45,28 @@ document.addEventListener("DOMContentLoaded", function(){
   
   }); 
 // DOMContentLoaded  end
-$(document).ready(function(){
-  $(document).on('click','.dropbtn2',function(){
-      $('.dropbtn2').not(this).next().removeClass('show');
-      $(this).next().toggleClass('show');
+$(function(){
+  
+  $('li.dropdown > a').on('click',function(event){
+    
+    event.preventDefault();
+    $(this).toggleClass('selected');
+    $(this).parent().find('ul').first().toggle(300);
+    
+    $(this).parent().siblings().find('ul').hide(200);
+    
+    //Hide menu when clicked outside
+    $(this).parent().find('ul').parent().mouseleave(function(){ 
+      var thisUI = $(this);
+      $('html').click(function(){
+        thisUI.children(".dropdown-menu").hide();
+    thisUI.children("a").removeClass('selected');
+               
+        $('html').unbind('click');
+      });
+    });
+    
+    
   });
-  $(document).on('click',function(e){
-      if(!$(e.target).closest('.dropbtn2').length)
-          $('.dropbtn2').next().removeClass('show');
-  });    
+  
 });
