@@ -278,6 +278,7 @@
 	&__ttl{
 		color: $color_main02;
 		@include NunitoSerif;
+		margin-bottom: 2rem;
 		@include sp{
 			text-align: center;
 		}
