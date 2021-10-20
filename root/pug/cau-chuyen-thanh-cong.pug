@@ -19,10 +19,10 @@ block container
         .c-wbanner__content
             h3.c-wbanner__ttl.ttl CÂU CHUYỆN THÀNH CÔNG KHÁCH HÀNG
             p.c-wbanner__txt Mỗi câu chuyện định cư là một hành trình mới rộng mở với khách hàng. Mỗi câu chuyện thành công của khách hàng là thêm một động lực phát triển của JHL.
-            a.c-wbanner__btn.btn(href="#" ) Xem toàn bộ     
+            a.c-wbanner__btn.btn(href="#" ) Đăng ký tư vấn   
   
   .container.container__inner                          
-    section.c-news.is_blog.py-5.p-sm-3
+    section.c-news.is_blog.py-5.p-sm-3.is_story
       .container
         .row 
           .col-12
@@ -32,18 +32,18 @@ block container
             .card.shadow-sm
               img(src=path+'assets/images/img_news.jpg' type="image/jpg" alt="news")
               .card-body.p-md-4.p-2
-                h4.c-news__name.mb-3 10 nơi có chi phí sinh hoạt rẻ nhất cho người định cư Hoa Kỳ
+                h4.c-news__name.mb-3 Mr. Hoàng hiện thực hóa giấc mơ Mỹ cùng JHL
                 p.card-text.c-news__txt
-                  | Tận hưởng cuộc sống thoải mái tại tiểu bang Mỹ với chi phí không hề đắt đỏ, tại sao không?
+                  | Vào đầu tháng 9 năm 2019, anh Huỳnh đã đến với công ty chúng tôi vì muốn thực hiện hóa ước mơ định cư và phát triển ...
                 .d-flex.justify-content-center.align-items-center.mt-auto
                   a.c-news__btn.btn(href="#" ) Xem thêm
           .col-md-4.col-12.mt-5
             .card.shadow-sm
               img(src=path+'assets/images/img_news.jpg' type="image/jpg" alt="news")
               .card-body.p-md-4.p-2
-                h4.c-news__name.mb-3 5 Cách định cư Canada
+                h4.c-news__name.mb-3 Lorem ipsum dolor sit amet consectetur adipiscing
                 p.card-text.c-news__txt
-                  | Chọn cách định cư Canada phù hợp với điều kiện và mục tiêu di trú của bạn qua bài viết này.
+                  |  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis vitae ultricies turpis. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                 .d-flex.justify-content-center.align-items-center.mt-auto
                   a.c-news__btn.btn(href="#" ) Xem thêm
           .col-md-4.col-12.mt-5.mx-auto
@@ -102,18 +102,27 @@ block container
       .row.c-review__inner.py-5.mt-5.mb-5 
         .c-review__item 
           .c-review__img
-            img(src=path+'assets/images/img_user.jpg', alt="")
+            img(src=path+'assets/images/userx1.jpg', alt="Anh Trần Thái Tuấn")
           .c-review__content 
-            h4.c-review__name Anh Tr.Th.T 
+            h4.c-review__name Anh Trần Thái Tuấn
             p.c-review__namesub Định cư EB-3
             p.c-review__txt Sự nhiệt tình của JHL có thể thấy trong từng công việc, JHL đã cùng tôi suốt quá trình từ Việt Nam qua Mỹ mà rất chu đáo, rất tận tình. Cám ơn JHL.
         .c-review__item 
           .c-review__img
-            img(src=path+'assets/images/img_user.jpg', alt="")
+            img(src=path+'assets/images/user3.jpg', alt="Anh Nguyễn Thanh Toàn")
           .c-review__content 
-            h4.c-review__name Anh Tr.Th.T 
-            p.c-review__namesub Định cư EB-34
-            p.c-review__txt Sự nhiệt tình của JHL có thể thấy trong từng công việc, JHL đã cùng tôi suốt quá trình từ Việt Nam qua Mỹ mà rất chu đáo, rất tận tình. Cám ơn JHL.
+            h4.c-review__name Anh Nguyễn Thanh Toàn
+            p.c-review__namesub Định cư EB-3
+            p.c-review__txt Cả gia đình tôi đã đến Mỹ được hơn 1 tháng mà tôi vẫn thấy lâng lâng vì vui sướng. Tôi có việc làm ngay khi đến đây và con tôi được đi học miễn phí. Các thủ tục mướn nhà, đăng ký việc làm, hòa nhập cộng đồng... đều được JHL quan tâm nhiệt tình. Thật sự cảm ơn JHL rất nhiều vì đã hỗ trợ gia đình tôi chu đáo.
+
+        .c-review__item 
+          .c-review__img
+            img(src=path+'assets/images/userx2.jpg', alt="Phạm Nhật Vy")
+          .c-review__content 
+            h4.c-review__name Phạm Nhật Vy
+            p.c-review__namesub Định cư Canada
+            p.c-review__txt Đi định cư nước ngoài tất nhiên không dễ, cần kiên nhẫn và tin tưởng nhiều. Thế nhưng tôi vẫn muốn cảm ơn JHL đã đồng hành và khiến tôi yên tâm trong suốt quá trình xúc tiến hồ sơ, vượt qua những trở ngại. Cám ơn đội ngũ JHL đã đem đến cơ hội tuyệt vời này cho tôi.
+
 
     section.c-submit.py-5
       .container.container__inner
@@ -146,7 +155,7 @@ block script
         dots:false,
         pauseOnDotsHover:true,
         cssEase:'linear',
-        draggable:false,
+        draggable:true,
         nav: false,
         prevArrow: null,
         nextArrow: null, 
