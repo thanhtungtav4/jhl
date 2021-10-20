@@ -132,11 +132,11 @@
 }
 .m-interest{
 	background-image: url(../../assets/images/bg__interest.jpg);
-    background-position: left;
+    background-position: bottom;
     height: 794px;
     background-size: contain;
     background-repeat: no-repeat;
-    background-color: #f1f3f5;
+    background-color: #f5f5f5;
 	position: relative;
     z-index: 1;
 	@include sp{
