@@ -5,7 +5,7 @@ nav#navbar_main.mobile-offcanvas.navbar.navbar-expand-md.pt-0.pb-0
     .container
       .m-header__top
           .m-header__logo 
-            a(href)
+            a(href="/")
               img(src=path+'assets/images/jhl_logo.png', alt="JHL logo" height="97")
           ul.m-header__info 
             li 
@@ -36,11 +36,11 @@ nav#navbar_main.mobile-offcanvas.navbar.navbar-expand-md.pt-0.pb-0
  
             ul.dropdown-menu
               li
-                a(href='#') Về HJL
+                a(href=path+'about-us.html') Về HJL
               li
-                a(href='#') Câu chuyện thành công
+                a(href=path+'cau-chuyen-thanh-cong.html') Câu chuyện thành công
               li
-                a(href='#') Tuyển dụng            
+                a(href=path+'tuyen-dung.html') Tuyển dụng            
           li.dropdown
             a(href='#')
               | Tin tức & sự kiện 
@@ -48,22 +48,22 @@ nav#navbar_main.mobile-offcanvas.navbar.navbar-expand-md.pt-0.pb-0
                 path(d='M10.5858 6.34317L12 4.92896L19.0711 12L12 19.0711L10.5858 17.6569L16.2427 12L10.5858 6.34317Z' fill='currentColor')
             ul.dropdown-menu
               li
-                a(href='#') Tin tức
+                a(href=path+'blog.html') Tin tức
               li
-                a(href='#') Sự kiện             
+                a(href=path+'su-kien-tong.html') Sự kiện             
           li
-            a.nav-link(href='/tuyen-dung.html')  Liên hệ
+            a.nav-link(href=path+'lien-he.html')  Liên hệ
 
         ul.m-header__mess 
           li 
-            a(href) 
+            a(href="mailto:infojhlimmigration@gmail.com") 
               img(src=path+'assets/images/icon_mess.png', alt="chat")    
           li 
-            a(href) 
+            a(href="https://www.messenger.com/t/tuvandinhcuJHL", target="_blank") 
               img(src=path+'assets/images/icon_chat.png', alt="chat") 
 span.screen-darken
 nav.d-flex.d-md-none.justify-content-between.align-items-center.navbar.navbar__mobile
-  a.navbar-brand(href='#') 
+  a.navbar-brand(href='/') 
       picture
        img(src=path+'assets/images/jhl_logo.png' alt="JHL logo" height="54")
   a.nav_menu.p-3(data-trigger='navbar_main') 
