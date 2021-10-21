@@ -50,12 +50,12 @@ block container
           source(srcset=path+'assets/images/about01.webp' type="image/webp") 
           img(src=path+'assets/images/about01.jpg' type="image/jpg" alt="TẦM NHÌN & SỨ MỆNH JHL")
       .row.mt-5.padding-top
-        .col-md-6.text-center
+        .col-md-6.text-center.order-md-1.order-2
           picture
             source(srcset=path+'assets/images/about02.avif' type="image/avif")
             source(srcset=path+'assets/images/about02.webp' type="image/webp") 
             img(src=path+'assets/images/about02.jpg' type="image/jpg" alt="TẦM NHÌN & SỨ MỆNH JHL")    
-        .col-md-6
+        .col-md-6.order-md-2.order-1
           h2.c-intro__ttl.ttl.ttl03 LIỆU BẠN CÓ ĐANG ...
           ul.c-intro__list
             li 
@@ -221,7 +221,7 @@ block script
         dots:true,
         pauseOnDotsHover:true,
         cssEase:'linear',
-        draggable:false,
+        draggable:true,
         nav: false,
         prevArrow: null,
         nextArrow: null, 
