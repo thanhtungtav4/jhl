@@ -1030,6 +1030,9 @@
 }
 .c-benefit{
 	margin-top: 5.7rem;
+	@include sp{
+		margin-top: 1rem;
+	}
 	margin-bottom: 2rem;
 	&__ttl{
 		font-size: 3.6rem;	
@@ -1091,6 +1094,12 @@
 			transition: all 0.2s ease;
 			transform: scale(0.75);
 			@include flex;
+		}
+		&-list{
+			@include sp{
+				height: 467px;
+				margin-top: -40px;
+			}
 		}
 		&-active {
 			z-index: 1;
